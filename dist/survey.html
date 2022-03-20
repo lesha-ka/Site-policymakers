@@ -1,0 +1,259 @@
+
+<html> 
+  <head> <!DOCTYPE html>
+    <html lang="ru">
+      <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Оценка</title>
+        <link href="css/style.min.css?_v=20220320053824" type="text/css" rel="stylesheet">
+      </head>
+    </html>
+  </head>
+  <body> 
+    <div class="wrapper">
+      <header class="header"> 
+        <div class="container">
+          <div class="header__wrap">
+            <div class="header__logo"> <img src="img/icons/logo.svg" alt="логотип">
+              <h2 class="header__title">Народная оценка политиков</h2>
+            </div>
+            <nav class="header__nav">
+              <div class="header__search js-headerSearch"><img class="js-headerSearchIcon" src="img/icons/search.svg" alt="поиск">
+                <form class="header__search-form js-headerSearchForm" action="post"> 
+                  <input class="header__search-input" type="text" placeholder="Поиск, введите город и тп.">
+                  <button class="header__search-btn" type="sumbit"></button>
+                </form>
+              </div><a class="header__link" href="#">Все политики</a><a class="header__link" href="#">О проекте</a>
+              <div class="header__menu js-headerMenu">
+                <div class="header__menu-corner"></div><img class="header__user" src="img/icons/user.svg" alt="фото">
+                <svg class="header__burger js-headerBurger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="16px">
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L17.000,-0.000 L17.000,2.000 L-0.000,2.000 L-0.000,-0.000 Z"></path>
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,7.000 L17.000,7.000 L17.000,9.000 L-0.000,9.000 L-0.000,7.000 Z"></path>
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,14.000 L17.000,14.000 L17.000,16.000 L-0.000,16.000 L-0.000,14.000 Z"></path>
+                </svg>
+                <div class="js-headerMenuList">
+                  <ul class="header__menu-list">
+                    <li class="header__menu-user"><img src="img/icons/user.svg" alt="фото"><span>Профиль</span></li>
+                    <li class="header__menu-item"> <a href="#">Редактировать профиль</a></li>
+                    <li class="header__menu-item"> <a href="#">Посмотреть свои отзывы</a></li>
+                    <li class="header__menu-item"> <a href="#"> Выход</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="survey">
+        <div class="container"> 
+          <section class="survey-wrap">
+            <form class="js-surveyForm" action="#">
+              <div class="survey__form js-formStart">
+                <div class="survey__form-head">
+                  <div class="survey__form-info js-surveyInfo">
+                    <h4 class="survey__form-title">Текст Текст</h4>
+                    <p class="survey__form-text">Текст текст текст текст текст текст текст текст текст тексттекст текст текст текст текст текст текст текст текст тексттекст текст текст текст</p>
+                  </div>
+                  <div class="survey__form-photo"> 
+                    <div class="survey__form-img"> <picture><source srcset="img/politician/politician.webp" type="image/webp"><img src="img/politician/politician.jpg" alt="Фото"></picture></div>
+                    <div class="survey__form-politictan"> 
+                      <div class="survey__form-name">Локоть Анатолий Евгеньевич</div>
+                      <div class="survey__form-post">Мэр города новосибирск</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="survey__form-input survey__form-input--start js-surveyQuestion" data-survey="1">
+                  <h4 class="survey__form-question">Решает проблемы</h4>
+                  <div class="rating-input">
+                    <input id="star-10" type="radio" name="rating-1" value="10">
+                    <label for="star-10" title="Оценка «10»"></label>
+                    <input id="star-9" type="radio" name="rating-1" value="9">
+                    <label for="star-9" title="Оценка «9»"></label>
+                    <input id="star-8" type="radio" name="rating-1" value="8">
+                    <label for="star-8" title="Оценка «8»"></label>
+                    <input id="star-7" type="radio" name="rating-1" value="7">
+                    <label for="star-7" title="Оценка «7»"></label>
+                    <input id="star-6" type="radio" name="rating-1" value="6">
+                    <label for="star-6" title="Оценка «6»"></label>
+                    <input id="star-5" type="radio" name="rating-1" value="5">
+                    <label for="star-5" title="Оценка «5»"></label>
+                    <input id="star-4" type="radio" name="rating-1" value="4">
+                    <label for="star-4" title="Оценка «4»"></label>
+                    <input id="star-3" type="radio" name="rating-1" value="3">
+                    <label for="star-3" title="Оценка «3»"></label>
+                    <input id="star-2" type="radio" name="rating-1" value="2">
+                    <label for="star-2" title="Оценка «2»"></label>
+                    <input id="star-1" type="radio" name="rating-1" value="1">
+                    <label for="star-1" title="Оценка «1»"></label>
+                  </div>
+                  <div class="survey__form-btns">
+                    <div class="survey__form-btn js-surveyPrev">Назад</div>
+                    <div class="survey__form-btn js-surveyNext">Далее</div>
+                  </div>
+                </div>
+                <div class="survey__form-input js-surveyQuestion" data-survey="2">
+                  <h4 class="survey__form-question">Медийность</h4>
+                  <div class="rating-input">
+                    <input id="star-20" type="radio" name="rating-2" value="10">
+                    <label for="star-20" title="Оценка «20»"></label>
+                    <input id="star-19" type="radio" name="rating-2" value="9">
+                    <label for="star-19" title="Оценка «19»"></label>
+                    <input id="star-18" type="radio" name="rating-2" value="8">
+                    <label for="star-18" title="Оценка «18»"></label>
+                    <input id="star-17" type="radio" name="rating-2" value="7">
+                    <label for="star-17" title="Оценка «17»"></label>
+                    <input id="star-16" type="radio" name="rating-2" value="6">
+                    <label for="star-16" title="Оценка «16»"></label>
+                    <input id="star-15" type="radio" name="rating-2" value="5">
+                    <label for="star-15" title="Оценка «15»"></label>
+                    <input id="star-14" type="radio" name="rating-2" value="4">
+                    <label for="star-14" title="Оценка «14»"></label>
+                    <input id="star-13" type="radio" name="rating-2" value="3">
+                    <label for="star-13" title="Оценка «13»"></label>
+                    <input id="star-12" type="radio" name="rating-2" value="2">
+                    <label for="star-12" title="Оценка «12»"></label>
+                    <input id="star-11" type="radio" name="rating-2" value="1">
+                    <label for="star-11" title="Оценка «11»"></label>
+                  </div>
+                  <div class="survey__form-btns">
+                    <div class="survey__form-btn js-surveyPrev">Назад</div>
+                    <div class="survey__form-btn js-surveyNext">Далее                    </div>
+                  </div>
+                </div>
+                <div class="survey__form-input js-surveyQuestion" data-survey="3">
+                  <h4 class="survey__form-question">Выдвигает инициативы</h4>
+                  <div class="rating-input">
+                    <input id="star-30" type="radio" name="rating-3" value="10">
+                    <label for="star-30" title="Оценка «10»"></label>
+                    <input id="star-29" type="radio" name="rating-3" value="9">
+                    <label for="star-29" title="Оценка «9»"></label>
+                    <input id="star-28" type="radio" name="rating-3" value="8">
+                    <label for="star-28" title="Оценка «8»"></label>
+                    <input id="star-27" type="radio" name="rating-3" value="7">
+                    <label for="star-27" title="Оценка «7»"></label>
+                    <input id="star-26" type="radio" name="rating-3" value="6">
+                    <label for="star-26" title="Оценка «6»"></label>
+                    <input id="star-25" type="radio" name="rating-3" value="5">
+                    <label for="star-25" title="Оценка «5»"></label>
+                    <input id="star-24" type="radio" name="rating-3" value="4">
+                    <label for="star-24" title="Оценка «4»"></label>
+                    <input id="star-23" type="radio" name="rating-3" value="3">
+                    <label for="star-23" title="Оценка «3»"></label>
+                    <input id="star-22" type="radio" name="rating-3" value="2">
+                    <label for="star-22" title="Оценка «2»"></label>
+                    <input id="star-21" type="radio" name="rating-3" value="1">
+                    <label for="star-21" title="Оценка «1»"></label>
+                  </div>
+                  <div class="survey__form-btns">
+                    <div class="survey__form-btn js-surveyPrev">Назад</div>
+                    <div class="survey__form-btn js-surveyNext">Далее                    </div>
+                  </div>
+                </div>
+                <div class="survey__form-input js-surveyQuestion" data-survey="4">
+                  <h4 class="survey__form-question">Открытость</h4>
+                  <div class="rating-input">
+                    <input id="star-40" type="radio" name="rating-4" value="10">
+                    <label for="star-40" title="Оценка «10»"></label>
+                    <input id="star-39" type="radio" name="rating-4" value="9">
+                    <label for="star-39" title="Оценка «9»"></label>
+                    <input id="star-38" type="radio" name="rating-4" value="8">
+                    <label for="star-38" title="Оценка «8»"></label>
+                    <input id="star-37" type="radio" name="rating-4" value="7">
+                    <label for="star-37" title="Оценка «7»"></label>
+                    <input id="star-36" type="radio" name="rating-4" value="6">
+                    <label for="star-36" title="Оценка «6»"></label>
+                    <input id="star-35" type="radio" name="rating-4" value="5">
+                    <label for="star-35" title="Оценка «5»"></label>
+                    <input id="star-34" type="radio" name="rating-4" value="4">
+                    <label for="star-34" title="Оценка «4»"></label>
+                    <input id="star-33" type="radio" name="rating-4" value="3">
+                    <label for="star-33" title="Оценка «3»"></label>
+                    <input id="star-32" type="radio" name="rating-4" value="2">
+                    <label for="star-32" title="Оценка «2»"></label>
+                    <input id="star-31" type="radio" name="rating-4" value="1">
+                    <label for="star-31" title="Оценка «1»"></label>
+                  </div>
+                  <div class="survey__form-btns">
+                    <div class="survey__form-btn js-surveyPrev">Назад</div>
+                    <div class="survey__form-btn js-surveyNext">Далее</div>
+                  </div>
+                </div>
+              </div>
+              <div class="survey__form survey__form--final js-surveyQuestion" data-survey="5">
+                <div class="survey__form-head">
+                  <div class="survey__result-list js-surveyResult">
+                    <h4 class="survey__result-title">Текст Текст</h4>
+                    <div class="survey__result-wrap">
+                      <div class="survey__result-item">
+                        <div class="survey__form-rate"> 
+                          <div class="survey__form-value">Решает проблемы</div>
+                          <div class="rating-result rating-result--survey js-starsResult"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="semi-active"></span><span></span><span></span></div>
+                        </div>
+                      </div>
+                      <div class="survey__result-item">
+                        <div class="survey__form-rate"> 
+                          <div class="survey__form-value">Медийность</div>
+                          <div class="rating-result rating-result--survey js-starsResult"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="semi-active"></span><span></span><span></span></div>
+                        </div>
+                      </div>
+                      <div class="survey__result-item">
+                        <div class="survey__form-rate"> 
+                          <div class="survey__form-value">Выдвигает инициативы</div>
+                          <div class="rating-result rating-result--survey js-starsResult"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="semi-active"></span><span></span><span></span></div>
+                        </div>
+                      </div>
+                      <div class="survey__result-item">
+                        <div class="survey__form-rate"> 
+                          <div class="survey__form-value">Открытойсть</div>
+                          <div class="rating-result rating-result--survey js-starsResult"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="semi-active"></span><span></span><span></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="survey__form-photo survey__form-photo--result"> 
+                    <div class="survey__form-img"> <picture><source srcset="img/politician/politician.webp" type="image/webp"><img src="img/politician/politician.jpg" alt="Фото"></picture></div>
+                    <div class="survey__form-politictan survey__form-politictan--result">
+                      <div class="survey__form-name">Локоть Анатолий Евгеньевич</div>
+                      <div class="survey__form-post">Мэр города новосибирск</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="survey__form-review"> 
+                  <p class="survey__form-subtitle">Ваш отзыв</p>
+                  <textarea class="survey__form-textarea" name="" cols="30" rows="10"> </textarea>
+                </div>
+                <div class="survey__form-btns">
+                  <div class="survey__form-btn js-surveyPrev">Назад</div>
+                  <div class="survey__form-btn js-surveyNext">Далее</div>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </main>
+      <div class="scroll-top js-scrollTop">
+        <div class="scroll-top__icon-wrap">
+          <svg class="scroll-top__icon" xmlns="http://www.w3.org/2000/svg" width="18.67" height="18.67" viewBox="0 0 19 19" fill="none">
+            <path d="M0.166504 9.50002L1.8115 11.145L8.33317 4.63502V18.8334H10.6665V4.63502L17.1765 11.1567L18.8332 9.50002L9.49984 0.166687L0.166504 9.50002Z" fill="#4C8FDD"></path>
+          </svg>
+        </div><span class="scroll-top__text">Наверх</span>
+      </div>
+      <footer class="footer">
+        <div class="container container--footer">
+          <div class="footer__wrap">
+            <div class="footer__logo"> <img src="img/icons/logo.svg" alt="логотип">
+              <h2 class="footer__title">Народная оценка политиков</h2>
+            </div>
+            <ul class="footer__nav">
+              <li class="footer__link"><a href="#">Все политики</a></li>
+              <li class="footer__link"><a href="#">О проекте</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <script src="js/app.min.js?_v=20220320053824"></script>
+    </div>
+  </body>
+</html>

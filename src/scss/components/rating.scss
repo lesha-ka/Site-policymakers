@@ -1,0 +1,119 @@
+.politician {
+    &-rating {
+        text-align: right;
+        &--comment {
+            align-self: center;
+            @media #{$phone} {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+        }
+        &--head {
+            @media #{$tablet} {
+                text-align: left;
+            }
+        }
+        &--mobile {
+            display: none;
+            @media #{$tablet} {
+                display: block;
+            }
+        }
+        &--list {
+            @media #{$tablet} {
+                display: none;
+            }
+        }
+        &--info {
+            @media #{$tablet} {
+                margin-top: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &--politicians {
+            @media #{$tablet} {
+                @include fz-14;
+                margin-top: 8px;
+                display: flex;
+                align-items: center;
+            }
+        }
+        &--target {
+            text-align: center;
+        }
+    }
+    &-rating__value {
+        display: inline-block;
+        @include fz-24;
+        color: $white;
+        margin-bottom: 8px;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        min-width: 54px;
+        @media #{$phone} {
+            @include fz-14;
+            min-width: 46px;
+            &--info {
+                @include fz-18;
+            }
+            &--comment {
+                min-width: 32px;
+                padding: 8px;
+                @include fz-12;
+            }
+        }
+        &--comment {
+            @include fz-14;
+            min-width: 39px; 
+        }
+        &--review {
+            @include fz-14;
+            min-width: 39px;
+            color: $black;
+            @media #{$tablet} {
+                position: absolute;
+                top: 0;
+                right: 150px;
+            }
+            @media #{$phone} {
+                position: absolute;
+                top: 0;
+                right: 100px;
+            }
+        }
+        &--target {
+            @include fz-18;
+            color: $black;
+            padding: 8px 10px;
+            margin-bottom: 0;
+            margin-top: 12px;
+            @media #{$tablet} {
+                @include fz-18;
+                margin-top: 0;
+                margin-left: 12px;
+            }
+        }
+        &--list {
+            @media #{$tablet} {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &-rating__quantity {
+        @include fz-14;
+        color: $l-black;
+        &--info {
+            color: $black;
+            @include fz-18;
+            @media #{$tablet} {
+                @include fz-14;
+                margin-left: 8px;
+                color: $l-black;
+            }
+        }
+    }   
+}

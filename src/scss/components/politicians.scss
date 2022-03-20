@@ -1,0 +1,71 @@
+.politicians {
+    padding: 32px 0 31px;
+    &__title {
+        @include fz-24;
+        font-weight: 400;
+        padding: 0 10% 24px;
+        border-bottom: 1px solid $l-gray;
+        @media #{$desktop} {
+            padding: 0 0 20px;
+            text-align: center;
+        }
+        @media #{$tablet} {
+            @include fz-18;
+        }
+    }
+    &__list {
+        padding: 44px 0 0 15%;
+        @media #{$desktop} {
+            padding: 20px 0 0;
+        }
+    }
+    &__item {
+        max-width: 814px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid $blue;
+        border-radius: 10px;
+        margin-bottom: 32px;
+        @media #{$desktop} {
+            margin: 0 auto 32px;
+        }
+        @media #{$tablet} {
+            max-width: 700px;
+        }
+    }
+    &__photo {
+        max-width: 120px;
+        margin-right: 32px;
+        border-radius: 14px;
+        @media #{$phone} {
+            margin-right: 20px;
+        }
+    }
+    &__name {
+        @include fz-18;
+        font-weight: 400;
+        color: $black;
+        margin-bottom: 8px;
+        @media #{$tablet} {
+            @include fz-14;
+            font-weight: 400;
+        }
+    }
+    &__post {
+        text-transform: uppercase;
+        @include fz-14;
+        font-weight: 400;
+        color: $black;
+        @media #{$tablet} {
+            @include fz-12;
+            font-weight: 400;
+        }
+    }
+    &__text {
+        flex: 1 0 auto;
+        @media #{$phone} {
+            flex: 0 1 auto;
+        }
+    }
+}

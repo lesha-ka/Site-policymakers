@@ -1,8 +1,10 @@
+block variables
+    - var title = 'Главная'
 html 
     head 
-        include html/head
+        include html/static/head
     body 
-        include html/header
-        main.page 
-        include html/footer
-        script(src='js/app.min.js')
+        .wrapper
+            include html/static/header
+            include html/main
+            include html/static/footer

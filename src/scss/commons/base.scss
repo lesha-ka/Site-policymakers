@@ -1,0 +1,128 @@
+// Box sizing rules
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// Remove default margin
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+html,
+body {
+	height: 100%;
+}
+// Set core body defaults
+body {
+    font-family: $Montserrat;
+    line-height: 1.4;
+}
+
+// Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+ol,
+ul,
+figure {
+    padding-inline-start: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+li {
+    list-style-type: none;
+}
+
+// A elements that don't have a class get default styles
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// Make images easier to work with
+img,
+picture {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+
+// Inherit fonts for inputs and buttons
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+.wrap-center {
+    height: calc(100vh - 202px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media #{$tablet} {
+        height: calc(100vh - 186px);
+    }
+    @media #{$phone} {
+        height: calc(100vh - 170px);
+    }
+}
+
+.container {
+    max-width: 1214px;
+    margin: 0 auto;
+    @media #{$desktop} {
+        max-width: calc(100% - 112px);
+    }
+    @media #{$laptop} {
+        max-width: calc(100% - 80px)
+    }
+    @media #{$tablet} {
+        max-width: calc(100% - 60px)
+    }
+    @media #{$phone} {
+        max-width: calc(100% - 40px)
+    }
+}
+
+.rate[data-color="green"] {
+    background: $green;
+}
+.rate[data-color="red"] {
+    background: $l-red;
+}
+.rate[data-color="yellow"] {
+    background: $yellow;
+}
+
+

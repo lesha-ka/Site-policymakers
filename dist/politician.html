@@ -1,0 +1,216 @@
+
+<html> 
+  <head> <!DOCTYPE html>
+    <html lang="ru">
+      <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Политик</title>
+        <link href="css/style.min.css?_v=20220320053824" type="text/css" rel="stylesheet">
+      </head>
+    </html>
+  </head>
+  <body> 
+    <div class="wrapper">
+      <header class="header"> 
+        <div class="container">
+          <div class="header__wrap">
+            <div class="header__logo"> <img src="img/icons/logo.svg" alt="логотип">
+              <h2 class="header__title">Народная оценка политиков</h2>
+            </div>
+            <nav class="header__nav">
+              <div class="header__search js-headerSearch"><img class="js-headerSearchIcon" src="img/icons/search.svg" alt="поиск">
+                <form class="header__search-form js-headerSearchForm" action="post"> 
+                  <input class="header__search-input" type="text" placeholder="Поиск, введите город и тп.">
+                  <button class="header__search-btn" type="sumbit"></button>
+                </form>
+              </div><a class="header__link" href="#">Все политики</a><a class="header__link" href="#">О проекте</a>
+              <div class="header__menu js-headerMenu">
+                <div class="header__menu-corner"></div><img class="header__user" src="img/icons/user.svg" alt="фото">
+                <svg class="header__burger js-headerBurger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="16px">
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L17.000,-0.000 L17.000,2.000 L-0.000,2.000 L-0.000,-0.000 Z"></path>
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,7.000 L17.000,7.000 L17.000,9.000 L-0.000,9.000 L-0.000,7.000 Z"></path>
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,14.000 L17.000,14.000 L17.000,16.000 L-0.000,16.000 L-0.000,14.000 Z"></path>
+                </svg>
+                <div class="js-headerMenuList">
+                  <ul class="header__menu-list">
+                    <li class="header__menu-user"><img src="img/icons/user.svg" alt="фото"><span>Профиль</span></li>
+                    <li class="header__menu-item"> <a href="#">Редактировать профиль</a></li>
+                    <li class="header__menu-item"> <a href="#">Посмотреть свои отзывы</a></li>
+                    <li class="header__menu-item"> <a href="#"> Выход</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="politician">
+        <div class="container"> 
+          <section class="politician-header"> 
+            <div class="politician-header__wrap">
+              <div class="politician-header__img"><picture><source srcset="img/politician/politician.webp" type="image/webp"><img src="img/politician/politician.jpg" alt="Фото"></picture>
+                <div class="politician-header__title politician-header__title--mobile">
+                  <div class="politician-header__main">
+                    <h3 class="politician-header__info-name">Локоть Анатолий Евгеньевич</h3>
+                    <p class="politician-header__info-post">Мэр города Новосибирск</p>
+                  </div>
+                  <div class="politician-rating politician-rating--head">
+                    <div class="politician-rating__value rate" data-color="green">8.2</div>
+                    <div class="politician-rating__quantity"> <span>156</span>&nbsp;оценок                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="politician-header__table">
+                <div class="politician-header__title">
+                  <div class="politician-header__main">
+                    <h3 class="politician-header__info-name">Локоть Анатолий Евгеньевич</h3>
+                    <p class="politician-header__info-post">Мэр города Новосибирск</p>
+                  </div>
+                  <div class="politician-rating">
+                    <div class="politician-rating__value rate" data-color="green">8.2</div>
+                    <div class="politician-rating__quantity"> <span>156</span>&nbsp;оценок</div>
+                  </div>
+                </div>
+                <ul class="politician-header__stat"> 
+                  <li class="politician-header__stat-item"> 
+                    <div class="politician-header__stat-parameter">Решает проблемы</div>
+                    <div class="politician-header__stat-value"><span>6.5</span>
+                      <progress class="politician-header__stat-line" value="6.5" max="10"></progress>
+                    </div>
+                  </li>
+                  <li class="politician-header__stat-item"> 
+                    <div class="politician-header__stat-parameter">Медийность</div>
+                    <div class="politician-header__stat-value"><span>9.1</span>
+                      <progress class="politician-header__stat-line" value="9.1" max="10"></progress>
+                    </div>
+                  </li>
+                  <li class="politician-header__stat-item"> 
+                    <div class="politician-header__stat-parameter">Выдвигает инициативы</div>
+                    <div class="politician-header__stat-value"><span>8.5</span>
+                      <progress class="politician-header__stat-line" value="8.5" max="10"></progress>
+                    </div>
+                  </li>
+                  <li class="politician-header__stat-item"> 
+                    <div class="politician-header__stat-parameter">Открытость</div>
+                    <div class="politician-header__stat-value"><span>8.9</span>
+                      <progress class="politician-header__stat-line" value="8.9" max="10"></progress>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="politician-header__info">
+              <dl class="politician-header__list">
+                <div class="politician-header__list-item">
+                  <dt class="politician-header__list-parameter">Дата рождения:
+                    <dd class="politician-header__list-value">18 января 1959 города</dd>
+                  </dt>
+                </div>
+                <div class="politician-header__list-item">
+                  <dt class="politician-header__list-parameter">Возраст:
+                    <dd class="politician-header__list-value">63 года</dd>
+                  </dt>
+                </div>
+                <div class="politician-header__list-item">
+                  <dt class="politician-header__list-parameter">Знак зодиака:
+                    <dd class="politician-header__list-value">Козерог</dd>
+                  </dt>
+                </div>
+                <div class="politician-header__list-item">
+                  <dt class="politician-header__list-parameter">Партия:
+                    <dd class="politician-header__list-value">КПРФ</dd>
+                  </dt>
+                </div>
+              </dl>
+              <div class="politician-header__social"> 
+                <h4 class="politician-header__social-title">Социальные сети</h4>
+                <div class="politician-header__social-item"><img class="politician-header__social-img" src="img/icons/insta.svg" alt="">
+                  <dl class="politician-header__social-text">
+                    <dt class="politician-header__list-parameter">Instagram:
+                      <dd class="politician-header__list-value">a_lokot</dd>
+                    </dt>
+                  </dl>
+                </div>
+              </div><a class="politician-header__link" href="#">Поставить оценку </a>
+            </div>
+          </section>
+          <section class="politician-info"> 
+            <h4 class="politician-info__title">Информация</h4>
+            <p class="politician-info__text">Российский государственный и политический деятель, с апреля 2014 года мэр Новосибирска, депутат Государственной думы от фракции КПРФ четвёртого, пятого и шестого созывов. С февраля 2006 года - первый секретарь Новосибирского обкома КПРФ. С 27 мая 2017 года - член Президиума Центрального комитета КПРФ.</p>
+            <h4 class="politician-info__title">Народная оценка</h4>
+            <div class="politician-info__stars js-starsWrap">
+              <div class="politician-info__stars-wrap">
+                <div class="rating-result js-starsResult"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                <div class="politician-rating politician-rating--info"> 
+                  <div class="politician-rating__value politician-rating__value--info rate js-starsCount" data-color="green" data-count="8">8.2</div>
+                  <div class="politician-rating__quantity politician-rating__quantity--info"><span>156</span>&nbsp;оценок       </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="politician-comments"> 
+            <div class="politician-comments__item"> 
+              <div class="politician-comments__item-head">
+                <div class="politician-comments__img"><img src="img/icons/user.svg" alt="Профиль"></div><span class="politician-comments__name">Профиль</span>
+              </div>
+              <div class="politician-comments__item-content">
+                <p class="politician-comments__text">Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст</p>
+                <div class="politician-rating politician-rating--comment">
+                  <div class="politician-rating__value politician-rating__value--comment rate" data-color="green">7.5</div>
+                </div>
+              </div>
+              <p class="politician-comments__item-date">6 дней назад</p>
+            </div>
+            <div class="politician-comments__item"> 
+              <div class="politician-comments__item-head">
+                <div class="politician-comments__img"><img src="img/icons/user.svg" alt="Профиль"></div><span class="politician-comments__name">Профиль</span>
+              </div>
+              <div class="politician-comments__item-content">
+                <p class="politician-comments__text">Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст</p>
+                <div class="politician-rating politician-rating--comment">
+                  <div class="politician-rating__value politician-rating__value--comment rate" data-color="yellow">6.5</div>
+                </div>
+              </div>
+              <p class="politician-comments__item-date">6 дней назад</p>
+            </div>
+            <div class="politician-comments__item"> 
+              <div class="politician-comments__item-head">
+                <div class="politician-comments__img"><img src="img/icons/user.svg" alt="Профиль"></div><span class="politician-comments__name">Профиль</span>
+              </div>
+              <div class="politician-comments__item-content">
+                <p class="politician-comments__text">Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст</p>
+                <div class="politician-rating politician-rating--comment">
+                  <div class="politician-rating__value politician-rating__value--comment rate" data-color="green">9.5</div>
+                </div>
+              </div>
+              <p class="politician-comments__item-date">6 дней назад</p>
+            </div>
+          </section>
+        </div>
+      </main>
+      <div class="scroll-top js-scrollTop">
+        <div class="scroll-top__icon-wrap">
+          <svg class="scroll-top__icon" xmlns="http://www.w3.org/2000/svg" width="18.67" height="18.67" viewBox="0 0 19 19" fill="none">
+            <path d="M0.166504 9.50002L1.8115 11.145L8.33317 4.63502V18.8334H10.6665V4.63502L17.1765 11.1567L18.8332 9.50002L9.49984 0.166687L0.166504 9.50002Z" fill="#4C8FDD"></path>
+          </svg>
+        </div><span class="scroll-top__text">Наверх</span>
+      </div>
+      <footer class="footer">
+        <div class="container container--footer">
+          <div class="footer__wrap">
+            <div class="footer__logo"> <img src="img/icons/logo.svg" alt="логотип">
+              <h2 class="footer__title">Народная оценка политиков</h2>
+            </div>
+            <ul class="footer__nav">
+              <li class="footer__link"><a href="#">Все политики</a></li>
+              <li class="footer__link"><a href="#">О проекте</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <script src="js/app.min.js?_v=20220320053824"></script>
+    </div>
+  </body>
+</html>

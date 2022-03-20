@@ -1,0 +1,33 @@
+header.header 
+    .container
+        .header__wrap
+            .header__logo 
+                img(src="@img/icons/logo.svg", alt="логотип")
+                h2.header__title Народная оценка политиков
+            nav.header__nav
+                .header__search.js-headerSearch
+                    img.js-headerSearchIcon(src="@img/icons/search.svg", alt="поиск")
+                    form.header__search-form.js-headerSearchForm(action="post") 
+                        input.header__search-input(type="text" placeholder="Поиск, введите город и тп.")
+                        button.header__search-btn(type="sumbit")
+                a.header__link(href="#") Все политики
+                a.header__link(href="#") О проекте
+                .header__menu.js-headerMenu
+                    .header__menu-corner
+                    img.header__user(src="@img/icons/user.svg", alt="фото")
+                    svg.header__burger.js-headerBurger(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='21px' height='16px')
+                        path(fill-rule='evenodd' fill='rgb(255, 255, 255)' d='M-0.000,-0.000 L17.000,-0.000 L17.000,2.000 L-0.000,2.000 L-0.000,-0.000 Z')
+                        path(fill-rule='evenodd' fill='rgb(255, 255, 255)' d='M-0.000,7.000 L17.000,7.000 L17.000,9.000 L-0.000,9.000 L-0.000,7.000 Z')
+                        path(fill-rule='evenodd' fill='rgb(255, 255, 255)' d='M-0.000,14.000 L17.000,14.000 L17.000,16.000 L-0.000,16.000 L-0.000,14.000 Z')
+                    .js-headerMenuList
+                        ul.header__menu-list
+                            li.header__menu-user
+                                img(src="@img/icons/user.svg", alt="фото")
+                                span Профиль
+                            li.header__menu-item 
+                                a(href="#") Редактировать профиль
+                            li.header__menu-item 
+                                a(href="#") Посмотреть свои отзывы
+                            li.header__menu-item 
+                                a(href="#")  Выход
+                    

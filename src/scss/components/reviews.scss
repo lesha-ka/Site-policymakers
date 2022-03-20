@@ -1,0 +1,139 @@
+.reviews {
+    &__wrap {
+        padding: 60px 0 57px;
+    }
+    &__title {
+        @include fz-24;
+        color: $black;
+        font-weight: 400;
+        margin-bottom: 24px;
+    }
+    &__item {
+        display: flex;
+        padding: 11.33px 13px 16px;
+        border: 1px solid $blue;
+        border-radius: 10px;
+        margin-bottom: 24px;
+        @media #{$tablet} {
+            display: block;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__content {
+        position: relative;
+        padding-right: 32px;
+        @media #{$tablet} {
+            padding-right: 0;
+        }
+    }
+    &__user {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        & img {
+            max-width: 33.33px;
+        }
+    }
+    &__profile {
+        margin-left: 13px;
+        @include fz-18;
+        color: $black;
+        @media #{$phone} {
+            @include fz-14;
+            margin-left: 11px;
+        }
+    }
+    &__del {
+        position: absolute;
+        top: 7px;
+        right: 32px;
+        color: $blue;
+        margin-right: 34px;
+        @include fz-14;
+        @media #{$tablet} {
+            top: 9px;
+        }
+        @media #{$phone} {
+            right: 0px;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            width: 24px;
+            height: 24px;
+            top: -2px;
+            right: -34px;
+            background: url(../../img/icons/del.svg) center no-repeat;
+        }
+    }
+    &__descriprion {
+        display: flex;
+    }
+    &__text {
+        margin-right: 25px;
+        @include fz-14;
+        color: $black;
+        @media #{$tablet} {
+            margin-right: 0;
+            margin-bottom: 38px;
+        }
+    }
+    &__date {
+        @include fz-10;
+        color: $m-black;
+        display: table-cell;
+        position: absolute;
+        right: 32px;
+        bottom: -8px;
+        @media #{$tablet} {
+            bottom: 18px;
+        }
+        @media #{$phone} {
+            right: 0px;
+        }
+    }
+    &__target {
+        display: flex;
+        border-left: 1px solid $blue;
+        padding-left: 36px;
+        @media #{$tablet} {
+            border-top: 1px solid $blue;
+            border-left: none;
+            padding-top: 18px;
+            padding-left: 0;
+            justify-content: center;
+            align-items: center;
+        }
+        @media #{$phone} {
+            padding: 18px 10% 0;
+        }
+    }
+    &__img {
+        min-width: 94px;
+        margin-right: 8px;
+        margin-top: auto;
+        margin-bottom: auto;
+        border-radius: 10px;
+        @media #{$tablet} {
+            min-width: auto;
+            max-width: 120px;
+        }
+        @media #{$phone} {
+            max-width: 70px;
+        }
+    }
+    &__name {
+        min-width: 130px;
+        margin: auto;
+        text-align: center;
+        @include fz-14;
+        color: $black;
+        @media #{$tablet} {
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+    }
+}

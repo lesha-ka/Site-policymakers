@@ -1,0 +1,73 @@
+.login {
+    &__title {
+        @include fz-36;
+        color: $black;
+        font-weight: 400;
+        margin-bottom: 60px;
+        @media #{$phone} {
+            @include fz-24;
+            margin-bottom: 32px;
+        }
+    }
+    &__input-wrap {
+        margin-bottom: 32px;
+        &:last-child {
+            margin-bottom: 16px;
+            @media #{$phone} {
+                margin-bottom: 24px;
+            }
+        }
+    }
+    &__input-title {
+        @include fz-18;
+        color: $black;
+        margin-bottom: 16px;
+    }
+    &__input {
+        display: block;
+        @include fz-18;
+        color: $black;
+        padding: 11px 35px 11px 16px;
+        border-radius: 5px;
+        border: 1px solid $blue;
+        transition: 0.3s ease-out;
+        width: 234px;
+        &::placeholder {
+            color: #c7c7c7;
+        }
+        &:focus-visible {
+            outline: none;
+        }
+    }
+    &__forget {
+        @include fz-18;
+        display: block;
+        text-align: center;
+        color: #c7c7c7;
+        margin-bottom: 28px;
+        transition: 0.3s ease-out;
+        &:hover {
+            color: $blue;
+        }
+    }
+    &__enter {
+        text-align: center;
+        &--register {
+            margin-top: 44px;
+        }
+    }
+    &__btn {
+        border-radius: 5px;
+        border: 1px solid $blue;
+        background: $white;
+        transition: 0.3s ease-out;
+        padding: 10px;
+        color: $blue;
+        cursor: pointer;
+        @include fz-18;
+        &:hover {
+            color: $white;
+            background: $blue;
+        }
+    }
+}

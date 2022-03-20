@@ -1,0 +1,93 @@
+.input-active input{
+    transition: 0.3s ease-out;
+    background: linear-gradient(to right, $white 80%, $blue 20%);
+}
+.input-active svg path {
+    fill: $white;
+}
+.change-profile {
+    &__form {
+        display: flex;
+        @media #{$phone} {
+            display: block;
+            border: 1px solid $blue;
+            border-radius: 10px;
+            padding: 20px 30px 43px;
+        }
+    }
+    &__img {
+        @media #{$phone} {
+            margin: 0 auto;
+            max-width: 100px;
+            margin-bottom: 30px;
+        }
+    }
+    &__inputs {
+        margin: auto 0 auto 56px;
+        @media #{$phone} {
+            margin: 0 auto;
+        }
+    }
+    &__input-wrap {
+        position: relative;
+        margin-bottom: 32px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @media #{$phone} {
+            max-width: 234px;
+            margin: 0 auto 32px;
+        }
+    }
+    &__edit {
+        position: absolute;
+        max-width: 18px;
+        max-height: 18px;
+        top: calc(50% - 9px);
+        right: 20px;
+        cursor: pointer;
+        & path {
+            pointer-events: none;
+        }
+    }
+    &__input {
+        display: block;
+        @include fz-18;
+        color: $black;
+        padding: 11px 35px 11px 16px;
+        border-radius: 5px;
+        border: 1px solid $blue;
+        transition: 0.3s ease-out;
+        &::placeholder {
+            color: $black;
+        }
+        &:focus-visible {
+            outline: 0;
+        }
+        &:disabled {
+            background: $white;
+        }
+        @media #{$phone} {
+            max-width: 234px;
+            margin: 0 auto;
+        }
+    }
+    &__save {
+        margin-top: 80px;
+        text-align: center;
+    }
+    &__btn {
+        border-radius: 5px;
+        border: 1px solid $blue;
+        background: $white;
+        transition: 0.3s ease-out;
+        padding: 10px;
+        color: $black;
+        cursor: pointer;
+        @include fz-18;
+        &:hover {
+            color: $white;
+            background: $blue;
+        }
+    }
+}

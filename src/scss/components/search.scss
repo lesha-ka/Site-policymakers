@@ -1,0 +1,51 @@
+.search {
+    &-wrap {
+        padding: 53px 0;
+        width: 100%;
+        max-width: 806px;
+        margin: 0 auto;
+    }
+    &__form {
+        text-align: center;
+        border: 1px solid $blue;
+        border-radius: 10px;
+        padding: 34.5px 20px;
+    }
+    &__title {
+        @include fz-18;
+        font-weight: 400;
+        color: $black;
+        margin-bottom: 16px;
+    }
+    &__input-item {
+        margin-bottom: 32px;
+    }
+    &__input {
+        border: 1px solid $blue;
+        color: $black;
+        border-radius: 5px;
+        padding: 10px;
+        @include fz-18;
+        font-weight: 400;
+        &::placeholder {
+            color: $l-gray;
+        }
+        &:focus-visible {
+            outline: none;
+        }
+    }
+    &__btn {
+        border-radius: 5px;
+        border: 1px solid $blue;
+        background: $white;
+        transition: 0.3s ease-out;
+        padding: 10px;
+        color: $blue;
+        cursor: pointer;
+        @include fz-18;
+        &:hover {
+            color: $white;
+            background: $blue;
+        }
+    }
+}

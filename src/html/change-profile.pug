@@ -1,0 +1,18 @@
+main.change-profile
+    .container 
+        section.wrap-center 
+            form(action="#")
+                .change-profile__form
+                    .change-profile__img
+                        img(src="@img/icons/user-big.svg", alt="Иконка")
+                    .change-profile__inputs.js-inputsBlock
+                        .change-profile__input-wrap.js-inputWrap
+                            input.change-profile__input(type="text" placeholder="Имя профиля" disabled)
+                            svg.change-profile__edit.js-inputEdit(xmlns='http://www.w3.org/2000/svg' width='30' height='19' viewbox='0 0 19 19' fill='none')
+                                path(d='M0 15.2501V19.0001H3.75L14.81 7.94006L11.06 4.19006L0 15.2501ZM17.71 5.04006C18.1 4.65006 18.1 4.02006 17.71 3.63006L15.37 1.29006C14.98 0.900059 14.35 0.900059 13.96 1.29006L12.13 3.12006L15.88 6.87006L17.71 5.04006Z' fill='#323232')
+                        .change-profile__input-wrap.js-inputWrap
+                            input.change-profile__input(type="text" placeholder="Почта профиля" disabled)
+                            svg.change-profile__edit.js-inputEdit(xmlns='http://www.w3.org/2000/svg' width='30' height='19' viewbox='0 0 19 19' fill='none')
+                                path(d='M0 15.2501V19.0001H3.75L14.81 7.94006L11.06 4.19006L0 15.2501ZM17.71 5.04006C18.1 4.65006 18.1 4.02006 17.71 3.63006L15.37 1.29006C14.98 0.900059 14.35 0.900059 13.96 1.29006L12.13 3.12006L15.88 6.87006L17.71 5.04006Z' fill='#323232')
+                .change-profile__save
+                    button.change-profile__btn(type="sumbit") Сохранить и вернуться на главную страницу

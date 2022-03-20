@@ -1,0 +1,132 @@
+main.politician
+    .container 
+        section.politician-header 
+            .politician-header__wrap
+                .politician-header__img
+                    img(src="@img/politician/politician.jpg", alt="Фото")
+                    .politician-header__title.politician-header__title--mobile
+                        .politician-header__main
+                            h3.politician-header__info-name Локоть Анатолий Евгеньевич
+                            p.politician-header__info-post Мэр города Новосибирск
+                        .politician-rating.politician-rating--head
+                            .politician-rating__value.rate(data-color="green") 8.2
+                            .politician-rating__quantity 
+                                span 156
+                                | &nbsp;оценок                      
+                .politician-header__table
+                    .politician-header__title
+                        .politician-header__main
+                            h3.politician-header__info-name Локоть Анатолий Евгеньевич
+                            p.politician-header__info-post Мэр города Новосибирск
+                        .politician-rating
+                            .politician-rating__value.rate(data-color="green") 8.2
+                            .politician-rating__quantity 
+                                span 156
+                                | &nbsp;оценок
+                    ul.politician-header__stat 
+                        li.politician-header__stat-item 
+                            .politician-header__stat-parameter Решает проблемы
+                            .politician-header__stat-value
+                                span 6.5
+                                progress.politician-header__stat-line(value="6.5" max="10")
+                        li.politician-header__stat-item 
+                            .politician-header__stat-parameter Медийность
+                            .politician-header__stat-value
+                                span 9.1
+                                progress.politician-header__stat-line(value="9.1" max="10")
+                        li.politician-header__stat-item 
+                            .politician-header__stat-parameter Выдвигает инициативы
+                            .politician-header__stat-value
+                                span 8.5
+                                progress.politician-header__stat-line(value="8.5" max="10")
+                        li.politician-header__stat-item 
+                            .politician-header__stat-parameter Открытость
+                            .politician-header__stat-value
+                                span 8.9
+                                progress.politician-header__stat-line(value="8.9" max="10")
+            .politician-header__info
+                dl.politician-header__list
+                    .politician-header__list-item
+                        dt.politician-header__list-parameter Дата рождения:
+                            dd.politician-header__list-value 18 января 1959 города
+                    .politician-header__list-item
+                        dt.politician-header__list-parameter Возраст:
+                            dd.politician-header__list-value 63 года
+                    .politician-header__list-item
+                        dt.politician-header__list-parameter Знак зодиака:
+                            dd.politician-header__list-value Козерог
+                    .politician-header__list-item
+                        dt.politician-header__list-parameter Партия:
+                            dd.politician-header__list-value КПРФ
+                .politician-header__social 
+                    h4.politician-header__social-title Социальные сети
+                    .politician-header__social-item
+                        img.politician-header__social-img(src="@img/icons/insta.svg", alt="")
+                        dl.politician-header__social-text
+                            dt.politician-header__list-parameter Instagram:
+                                dd.politician-header__list-value a_lokot
+                a.politician-header__link(href="#") Поставить оценку 
+        section.politician-info 
+            h4.politician-info__title Информация
+            p.politician-info__text Российский государственный и политический деятель, с апреля 2014 года мэр Новосибирска, депутат Государственной думы от фракции КПРФ четвёртого, пятого и шестого созывов. С февраля 2006 года - первый секретарь Новосибирского обкома КПРФ. С 27 мая 2017 года - член Президиума Центрального комитета КПРФ.
+            h4.politician-info__title Народная оценка
+            .politician-info__stars.js-starsWrap
+                .politician-info__stars-wrap
+                    .rating-result.js-starsResult
+                        span
+                        span
+                        span
+                        span
+                        span
+                        span
+                        span
+                        span
+                        span
+                        span
+                    .politician-rating.politician-rating--info 
+                        .politician-rating__value.politician-rating__value--info.rate.js-starsCount(data-color="green" data-count="8") 8.2
+                        .politician-rating__quantity.politician-rating__quantity--info
+                            span 156
+                            | &nbsp;оценок       
+        section.politician-comments 
+            .politician-comments__item 
+                .politician-comments__item-head
+                    .politician-comments__img
+                        img(src="@img/icons/user.svg", alt="Профиль")
+                    span.politician-comments__name Профиль
+                .politician-comments__item-content
+                    p.politician-comments__text Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                    .politician-rating.politician-rating--comment
+                        .politician-rating__value.politician-rating__value--comment.rate(data-color="green") 7.5
+                p.politician-comments__item-date 6 дней назад
+            .politician-comments__item 
+                .politician-comments__item-head
+                    .politician-comments__img
+                        img(src="@img/icons/user.svg", alt="Профиль")
+                    span.politician-comments__name Профиль
+                .politician-comments__item-content
+                    p.politician-comments__text Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                    .politician-rating.politician-rating--comment
+                        .politician-rating__value.politician-rating__value--comment.rate(data-color="yellow") 6.5
+                p.politician-comments__item-date 6 дней назад
+            .politician-comments__item 
+                .politician-comments__item-head
+                    .politician-comments__img
+                        img(src="@img/icons/user.svg", alt="Профиль")
+                    span.politician-comments__name Профиль
+                .politician-comments__item-content
+                    p.politician-comments__text Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                    .politician-rating.politician-rating--comment
+                        .politician-rating__value.politician-rating__value--comment.rate(data-color="green") 9.5
+                p.politician-comments__item-date 6 дней назад
+                
+
+
+                    
+
+                             
+
+
+
+
+

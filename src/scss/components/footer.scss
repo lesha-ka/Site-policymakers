@@ -1,0 +1,46 @@
+.footer {
+    position: relative;
+    background-color: $d-gray;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
+    &__wrap {
+        color: $white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 19px 0;
+        margin-right: 4.2%;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        @media #{$tablet} {
+            max-width: 47px;
+        }
+    }
+    &__title {
+        @include fz-14;
+        color: $white;
+        font-weight: 400;
+        margin-left: 36px;
+        @media #{$tablet} {
+            display: none;
+        }
+    }
+    &__nav {
+        @include fz-14;
+        color: $white;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        @media #{$tablet} {
+            display: none;
+        }
+    }
+    &__link {
+        @include fz-18;
+        margin-left: 19px;
+        &:hover {
+            border-bottom: 1px solid $white;
+        }
+    }
+}
