@@ -1,0 +1,100 @@
+
+<html> 
+  <head> <!DOCTYPE html>
+    <html lang="ru">
+      <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Редактировать профиль</title>
+        <link href="css/style.min.css?_v=20220320053824" type="text/css" rel="stylesheet">
+      </head>
+    </html>
+  </head>
+  <body> 
+    <div class="wrapper">
+      <header class="header"> 
+        <div class="container">
+          <div class="header__wrap">
+            <div class="header__logo"> <img src="img/icons/logo.svg" alt="логотип">
+              <h2 class="header__title">Народная оценка политиков</h2>
+            </div>
+            <nav class="header__nav">
+              <div class="header__search js-headerSearch"><img class="js-headerSearchIcon" src="img/icons/search.svg" alt="поиск">
+                <form class="header__search-form js-headerSearchForm" action="post"> 
+                  <input class="header__search-input" type="text" placeholder="Поиск, введите город и тп.">
+                  <button class="header__search-btn" type="sumbit"></button>
+                </form>
+              </div><a class="header__link" href="#">Все политики</a><a class="header__link" href="#">О проекте</a>
+              <div class="header__menu js-headerMenu">
+                <div class="header__menu-corner"></div><img class="header__user" src="img/icons/user.svg" alt="фото">
+                <svg class="header__burger js-headerBurger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="16px">
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L17.000,-0.000 L17.000,2.000 L-0.000,2.000 L-0.000,-0.000 Z"></path>
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,7.000 L17.000,7.000 L17.000,9.000 L-0.000,9.000 L-0.000,7.000 Z"></path>
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,14.000 L17.000,14.000 L17.000,16.000 L-0.000,16.000 L-0.000,14.000 Z"></path>
+                </svg>
+                <div class="js-headerMenuList">
+                  <ul class="header__menu-list">
+                    <li class="header__menu-user"><img src="img/icons/user.svg" alt="фото"><span>Профиль</span></li>
+                    <li class="header__menu-item"> <a href="#">Редактировать профиль</a></li>
+                    <li class="header__menu-item"> <a href="#">Посмотреть свои отзывы</a></li>
+                    <li class="header__menu-item"> <a href="#"> Выход</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="change-profile">
+        <div class="container"> 
+          <section class="wrap-center"> 
+            <form action="#">
+              <div class="change-profile__form">
+                <div class="change-profile__img"><img src="img/icons/user-big.svg" alt="Иконка"></div>
+                <div class="change-profile__inputs js-inputsBlock">
+                  <div class="change-profile__input-wrap js-inputWrap">
+                    <input class="change-profile__input" type="text" placeholder="Имя профиля" disabled>
+                    <svg class="change-profile__edit js-inputEdit" xmlns="http://www.w3.org/2000/svg" width="30" height="19" viewbox="0 0 19 19" fill="none">
+                      <path d="M0 15.2501V19.0001H3.75L14.81 7.94006L11.06 4.19006L0 15.2501ZM17.71 5.04006C18.1 4.65006 18.1 4.02006 17.71 3.63006L15.37 1.29006C14.98 0.900059 14.35 0.900059 13.96 1.29006L12.13 3.12006L15.88 6.87006L17.71 5.04006Z" fill="#323232"></path>
+                    </svg>
+                  </div>
+                  <div class="change-profile__input-wrap js-inputWrap">
+                    <input class="change-profile__input" type="text" placeholder="Почта профиля" disabled>
+                    <svg class="change-profile__edit js-inputEdit" xmlns="http://www.w3.org/2000/svg" width="30" height="19" viewbox="0 0 19 19" fill="none">
+                      <path d="M0 15.2501V19.0001H3.75L14.81 7.94006L11.06 4.19006L0 15.2501ZM17.71 5.04006C18.1 4.65006 18.1 4.02006 17.71 3.63006L15.37 1.29006C14.98 0.900059 14.35 0.900059 13.96 1.29006L12.13 3.12006L15.88 6.87006L17.71 5.04006Z" fill="#323232"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="change-profile__save">
+                <button class="change-profile__btn" type="sumbit">Сохранить и вернуться на главную страницу</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </main>
+      <div class="scroll-top js-scrollTop">
+        <div class="scroll-top__icon-wrap">
+          <svg class="scroll-top__icon" xmlns="http://www.w3.org/2000/svg" width="18.67" height="18.67" viewBox="0 0 19 19" fill="none">
+            <path d="M0.166504 9.50002L1.8115 11.145L8.33317 4.63502V18.8334H10.6665V4.63502L17.1765 11.1567L18.8332 9.50002L9.49984 0.166687L0.166504 9.50002Z" fill="#4C8FDD"></path>
+          </svg>
+        </div><span class="scroll-top__text">Наверх</span>
+      </div>
+      <footer class="footer">
+        <div class="container container--footer">
+          <div class="footer__wrap">
+            <div class="footer__logo"> <img src="img/icons/logo.svg" alt="логотип">
+              <h2 class="footer__title">Народная оценка политиков</h2>
+            </div>
+            <ul class="footer__nav">
+              <li class="footer__link"><a href="#">Все политики</a></li>
+              <li class="footer__link"><a href="#">О проекте</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <script src="js/app.min.js?_v=20220320053824"></script>
+    </div>
+  </body>
+</html>
