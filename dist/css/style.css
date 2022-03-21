@@ -834,6 +834,7 @@ main {
 
 .article__img {
   margin-right: 38px;
+  max-height: 320px;
 }
 
 .article__inner {
@@ -972,6 +973,7 @@ main {
       -ms-flex: 0 0 296px;
           flex: 0 0 296px;
   margin-right: 66px;
+  max-height: 330px;
 }
 
 .politician-header__table {
@@ -996,8 +998,8 @@ main {
 
 .politician-header__main {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+      -ms-flex: 1 0;
+          flex: 1 0;
   color: #000000;
 }
 
@@ -1289,8 +1291,8 @@ main {
 
 .politicians__text {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+      -ms-flex: 1 0;
+          flex: 1 0;
 }
 
 .survey-wrap {
@@ -2799,6 +2801,13 @@ main {
     right: 100px;
   }
 
+  .politician-header__img img {
+    max-height: 150px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+
   .politician-header__title--mobile {
     margin-left: 18px;
     padding-right: 0;
@@ -2903,8 +2912,8 @@ main {
 
   .politicians__text {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
+        -ms-flex: 0 1;
+            flex: 0 1;
   }
 
   .survey__form {

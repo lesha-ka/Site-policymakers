@@ -286,6 +286,7 @@
     }
     &__img {
         margin-right: 38px;
+        max-height: 320px;
         @media #{$phone} {
             margin-right: 0;
             max-height: 168px;

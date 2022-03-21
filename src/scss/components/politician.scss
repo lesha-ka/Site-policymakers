@@ -16,6 +16,7 @@
         &__img {
            flex: 0 0 296px;
            margin-right: 66px;
+           max-height: 330px;
            @media #{$tablet} {
                 width: 100%;
                 display: flex;
@@ -24,6 +25,10 @@
                 @media #{$tablet} {
                     border-radius: 14px;
                     max-width: 47.5%;
+                }
+                @media #{$phone} {
+                    max-height: 150px;
+                    align-self: center;
                 }
             }
         }
@@ -68,7 +73,7 @@
             }
         }
         &__main {
-            flex: 1 0 auto;
+            flex: 1 0;
             color: $black;
         }
         &__info-name {

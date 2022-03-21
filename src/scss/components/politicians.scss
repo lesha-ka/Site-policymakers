@@ -63,9 +63,9 @@
         }
     }
     &__text {
-        flex: 1 0 auto;
+        flex: 1 0;
         @media #{$phone} {
-            flex: 0 1 auto;
+            flex: 0 1;
         }
     }
 }
