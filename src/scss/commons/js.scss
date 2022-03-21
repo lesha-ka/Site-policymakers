@@ -41,6 +41,9 @@
             bottom: -40px;
             left: -42px;
             border-radius: 0 0 10px 0;
+            @media #{$phone} {
+                display: none;
+            }       
         }
         &::before {
             content: "";
@@ -51,7 +54,9 @@
             bottom: -43px;
             left: -45px;
             border-radius: 0 0 10px 0;
-        
+            @media #{$phone} {
+                display: none;
+            }
         }
     }
 }

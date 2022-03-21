@@ -59,6 +59,9 @@
         @media #{$phone} {
             margin-right: 12px;
         } 
+        @media screen and (max-width: 359px) {
+            margin-right: 2px;
+        }
     }
     &__search-form {
         position: relative;
@@ -91,7 +94,11 @@
         @media #{$phone} {
             @include fz-12;
             width: 200px;
+            padding: 9px 20px 9px 7px;
         } 
+        @media screen and (max-width: 359px) {
+            width: 190px;
+        }
     }
     &__search-btn {
         position: absolute;
@@ -102,7 +109,7 @@
         right: 2px;
         top: 10px;
         height: 18px;
-        background: url(../../img/icons/filter.svg) center no-repeat;
+        background: url(../img/icons/filter.svg) center;
         cursor: pointer;
     }
     &__link {
@@ -125,7 +132,7 @@
             z-index: 3;
             position: absolute;
             content: "";
-            background: url('../../img/icons/arrow-down.svg') center no-repeat;
+            background: url('../img/icons/arrow-down.svg') center no-repeat;
             width: 20px;
             height: 20px;
             top: calc(50% - 10px);
@@ -146,6 +153,9 @@
         @media #{$phone} {
             width: 21px;
             margin-right: 0;
+        }
+        @media screen and (max-width: 359px) {
+            margin-left: 15px;
         }
     }
     &__user {

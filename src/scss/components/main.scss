@@ -7,7 +7,7 @@
         padding-bottom: 36px;
     }
     &-about {
-        background: url(../../img/index/head.png) center no-repeat;
+        background: url(../img/index/head.png) center;
         background-size: cover;
         padding: 80px 0 73px ;
         @media #{$tablet} {
@@ -62,11 +62,12 @@
             padding: 75px 20px 178px;
             min-height: 307px;
             max-width: 100%;
-            background: url(../../img/index/head-mob.jpg) center no-repeat;
+            background: url(../img/index/head-mob.jpg) center/cover;
             background-size: 100% auto;
         }
         @media #{$small-phone} {
             @include fz-14;
+            background-size: cover;
         }
     }
     &__search {

@@ -15,7 +15,7 @@ main.survey
                                 .survey__form-post Мэр города новосибирск
                     .survey__form-input.survey__form-input--start.js-surveyQuestion(data-survey="1")
                         h4.survey__form-question Решает проблемы
-                        .rating-input
+                        .rating-input.js-ratingInput
                             input#star-10(type='radio' name='rating-1' value='10')
                             label(for='star-10' title='Оценка «10»')
                             input#star-9(type='radio' name='rating-1' value='9')
@@ -41,7 +41,7 @@ main.survey
                             .survey__form-btn.js-surveyNext Далее
                     .survey__form-input.js-surveyQuestion(data-survey="2")
                         h4.survey__form-question Медийность
-                        .rating-input
+                        .rating-input.js-ratingInput
                             input#star-20(type='radio' name='rating-2' value='10')
                             label(for='star-20' title='Оценка «20»')
                             input#star-19(type='radio' name='rating-2' value='9')
@@ -67,7 +67,7 @@ main.survey
                             .survey__form-btn.js-surveyNext Далее                    
                     .survey__form-input.js-surveyQuestion(data-survey="3")
                         h4.survey__form-question Выдвигает инициативы
-                        .rating-input
+                        .rating-input.js-ratingInput
                             input#star-30(type='radio' name='rating-3' value='10')
                             label(for='star-30' title='Оценка «10»')
                             input#star-29(type='radio' name='rating-3' value='9')
@@ -93,7 +93,7 @@ main.survey
                             .survey__form-btn.js-surveyNext Далее                    
                     .survey__form-input.js-surveyQuestion(data-survey="4")
                         h4.survey__form-question Открытость
-                        .rating-input
+                        .rating-input.js-ratingInput
                             input#star-40(type='radio' name='rating-4' value='10')
                             label(for='star-40' title='Оценка «10»')
                             input#star-39(type='radio' name='rating-4' value='9')
@@ -122,60 +122,60 @@ main.survey
                         .survey__result-list.js-surveyResult
                             h4.survey__result-title Текст Текст
                             .survey__result-wrap
-                                .survey__result-item
-                                    .survey__form-rate 
+                                .survey__result-item.js-starsWrap
+                                    .survey__form-rate.js-starsCount(data-result="1")
                                         .survey__form-value Решает проблемы
-                                        .rating-result.rating-result--survey.js-starsResult
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.semi-active
+                                        .rating-result.rating-result--survey
+                                            spanx
                                             span
                                             span
-                                .survey__result-item
-                                    .survey__form-rate 
-                                        .survey__form-value Медийность
-                                        .rating-result.rating-result--survey.js-starsResult
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.semi-active
                                             span
                                             span
-                                .survey__result-item
-                                    .survey__form-rate 
-                                        .survey__form-value Выдвигает инициативы
-                                        .rating-result.rating-result--survey.js-starsResult
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.semi-active
                                             span
                                             span
-                                .survey__result-item
-                                    .survey__form-rate 
-                                        .survey__form-value Открытойсть
-                                        .rating-result.rating-result--survey.js-starsResult
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.active
-                                            span.semi-active
+                                            span
+                                            span
+                                            span
+                                .survey__result-item.js-starsWrap
+                                    .survey__form-rate.js-starsCount(data-result="2")
+                                        .survey__form-value Решает проблемы
+                                        .rating-result.rating-result--survey
+                                            spanx
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                .survey__result-item.js-starsWrap
+                                    .survey__form-rate.js-starsCount(data-result="3")
+                                        .survey__form-value Решает проблемы
+                                        .rating-result.rating-result--survey
+                                            spanx
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                .survey__result-item.js-starsWrap
+                                    .survey__form-rate.js-starsCount(data-result="4")
+                                        .survey__form-value Решает проблемы
+                                        .rating-result.rating-result--survey
+                                            spanx
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
                                             span
                                             span
                         .survey__form-photo.survey__form-photo--result 
