@@ -7,7 +7,7 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Оценка</title>
-        <link href="css/style.min.css?_v=20220320053824" type="text/css" rel="stylesheet">
+        <link href="css/style.min.css?_v=20220321185501" type="text/css" rel="stylesheet">
       </head>
     </html>
   </head>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="survey__form-input survey__form-input--start js-surveyQuestion" data-survey="1">
                   <h4 class="survey__form-question">Решает проблемы</h4>
-                  <div class="rating-input">
+                  <div class="rating-input js-ratingInput">
                     <input id="star-10" type="radio" name="rating-1" value="10">
                     <label for="star-10" title="Оценка «10»"></label>
                     <input id="star-9" type="radio" name="rating-1" value="9">
@@ -95,7 +95,7 @@
                 </div>
                 <div class="survey__form-input js-surveyQuestion" data-survey="2">
                   <h4 class="survey__form-question">Медийность</h4>
-                  <div class="rating-input">
+                  <div class="rating-input js-ratingInput">
                     <input id="star-20" type="radio" name="rating-2" value="10">
                     <label for="star-20" title="Оценка «20»"></label>
                     <input id="star-19" type="radio" name="rating-2" value="9">
@@ -124,7 +124,7 @@
                 </div>
                 <div class="survey__form-input js-surveyQuestion" data-survey="3">
                   <h4 class="survey__form-question">Выдвигает инициативы</h4>
-                  <div class="rating-input">
+                  <div class="rating-input js-ratingInput">
                     <input id="star-30" type="radio" name="rating-3" value="10">
                     <label for="star-30" title="Оценка «10»"></label>
                     <input id="star-29" type="radio" name="rating-3" value="9">
@@ -153,7 +153,7 @@
                 </div>
                 <div class="survey__form-input js-surveyQuestion" data-survey="4">
                   <h4 class="survey__form-question">Открытость</h4>
-                  <div class="rating-input">
+                  <div class="rating-input js-ratingInput">
                     <input id="star-40" type="radio" name="rating-4" value="10">
                     <label for="star-40" title="Оценка «10»"></label>
                     <input id="star-39" type="radio" name="rating-4" value="9">
@@ -186,28 +186,36 @@
                   <div class="survey__result-list js-surveyResult">
                     <h4 class="survey__result-title">Текст Текст</h4>
                     <div class="survey__result-wrap">
-                      <div class="survey__result-item">
-                        <div class="survey__form-rate"> 
+                      <div class="survey__result-item js-starsWrap">
+                        <div class="survey__form-rate js-starsCount" data-result="1">
                           <div class="survey__form-value">Решает проблемы</div>
-                          <div class="rating-result rating-result--survey js-starsResult"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="semi-active"></span><span></span><span></span></div>
+                          <div class="rating-result rating-result--survey">
+                            <spanx></spanx><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                          </div>
                         </div>
                       </div>
-                      <div class="survey__result-item">
-                        <div class="survey__form-rate"> 
-                          <div class="survey__form-value">Медийность</div>
-                          <div class="rating-result rating-result--survey js-starsResult"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="semi-active"></span><span></span><span></span></div>
+                      <div class="survey__result-item js-starsWrap">
+                        <div class="survey__form-rate js-starsCount" data-result="2">
+                          <div class="survey__form-value">Решает проблемы</div>
+                          <div class="rating-result rating-result--survey">
+                            <spanx></spanx><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                          </div>
                         </div>
                       </div>
-                      <div class="survey__result-item">
-                        <div class="survey__form-rate"> 
-                          <div class="survey__form-value">Выдвигает инициативы</div>
-                          <div class="rating-result rating-result--survey js-starsResult"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="semi-active"></span><span></span><span></span></div>
+                      <div class="survey__result-item js-starsWrap">
+                        <div class="survey__form-rate js-starsCount" data-result="3">
+                          <div class="survey__form-value">Решает проблемы</div>
+                          <div class="rating-result rating-result--survey">
+                            <spanx></spanx><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                          </div>
                         </div>
                       </div>
-                      <div class="survey__result-item">
-                        <div class="survey__form-rate"> 
-                          <div class="survey__form-value">Открытойсть</div>
-                          <div class="rating-result rating-result--survey js-starsResult"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="semi-active"></span><span></span><span></span></div>
+                      <div class="survey__result-item js-starsWrap">
+                        <div class="survey__form-rate js-starsCount" data-result="4">
+                          <div class="survey__form-value">Решает проблемы</div>
+                          <div class="rating-result rating-result--survey">
+                            <spanx></spanx><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -253,7 +261,7 @@
           </div>
         </div>
       </footer>
-      <script src="js/app.min.js?_v=20220320053824"></script>
+      <script src="js/app.min.js?_v=20220321185501"></script>
     </div>
   </body>
 </html>

@@ -449,7 +449,7 @@ main {
   right: 2px;
   top: 10px;
   height: 18px;
-  background: url(../../img/icons/filter.svg) center no-repeat;
+  background: url(../img/icons/filter.svg) center;
   cursor: pointer;
 }
 
@@ -471,7 +471,7 @@ main {
   z-index: 3;
   position: absolute;
   content: "";
-  background: url("../../img/icons/arrow-down.svg") center no-repeat;
+  background: url("../img/icons/arrow-down.svg") center no-repeat;
   width: 20px;
   height: 20px;
   top: calc(50% - 10px);
@@ -631,7 +631,7 @@ main {
 }
 
 .no-webp .main-about {
-  background: url(../../img/index/head.png) center no-repeat; }
+  background: url(../img/index/head.png) center; }
 
 .main-about {
   background-size: cover;
@@ -1497,17 +1497,17 @@ main {
   line-height: 1;
   width: 40px;
   height: 40px;
-  background: url("../../img/icons/star.svg") center no-repeat;
+  background: url("../img/icons/star.svg") center no-repeat;
   background-size: cover;
 }
 
 .rating-result > span.active {
-  background: url("../../img/icons/star-full.svg") center no-repeat;
+  background: url("../img/icons/star-full.svg") center no-repeat;
   background-size: cover;
 }
 
 .rating-result > span.semi-active {
-  background: url("../../img/icons/star-semi.svg") center no-repeat;
+  background: url("../img/icons/star-semi.svg") center no-repeat;
   background-size: cover;
 }
 
@@ -1518,17 +1518,17 @@ main {
   margin-right: 7px;
   width: 16px;
   height: 16px;
-  background: url("../../img/icons/star.svg") center no-repeat;
+  background: url("../img/icons/star.svg") center no-repeat;
   background-size: cover;
 }
 
 .rating-result--survey > span.active {
-  background: url("../../img/icons/star-full.svg") center no-repeat;
+  background: url("../img/icons/star-full.svg") center no-repeat;
   background-size: cover;
 }
 
 .rating-result--survey > span.semi-active {
-  background: url("../../img/icons/star-semi.svg") center no-repeat;
+  background: url("../img/icons/star-semi.svg") center no-repeat;
   background-size: cover;
 }
 
@@ -1560,19 +1560,19 @@ main {
   position: absolute;
   width: 40px;
   height: 40px;
-  background: url("../../img/icons/star.svg") center no-repeat;
+  background: url("../img/icons/star.svg") center no-repeat;
   background-size: cover;
   left: 1;
 }
 
 .rating-input > input:checked ~ label {
-  background: url("../../img/icons/star-full.svg") center no-repeat;
+  background: url("../img/icons/star-full.svg") center no-repeat;
   background-size: cover;
 }
 
 .rating-input:not(:checked) > label:hover,
 .rating-input:not(:checked) > label:hover ~ label {
-  background: url("../../img/icons/star-full.svg") center no-repeat;
+  background: url("../img/icons/star-full.svg") center no-repeat;
   background-size: cover;
 }
 
@@ -1581,7 +1581,7 @@ main {
 .rating-input > input:checked ~ label:hover,
 .rating-input > input:checked ~ label:hover ~ label,
 .rating-input > label:hover ~ input:checked ~ label {
-  background: url("../../img/icons/star-full.svg") center no-repeat;
+  background: url("../img/icons/star-full.svg") center no-repeat;
   background-size: cover;
 }
 
@@ -1768,7 +1768,7 @@ main {
   height: 24px;
   top: -2px;
   right: -34px;
-  background: url(../../img/icons/del.svg) center no-repeat;
+  background: url(../img/icons/del.svg) center;
 }
 
 .reviews__descriprion {
@@ -2598,6 +2598,7 @@ main {
     font-size: 12px;
     line-height: 1.22;
     width: 200px;
+    padding: 9px 20px 9px 7px;
   }
 
   .header__menu::after {
@@ -2681,7 +2682,7 @@ main {
   }
 
   .no-webp .about__title {
-    background: url(../../img/index/head-mob.jpg) center no-repeat; }
+    background: url(../img/index/head-mob.jpg) center/cover; }
 
   .about__title {
     font-size: 18px;
@@ -3023,12 +3024,21 @@ main {
   .js-headerMenuOpen::before {
     display: none;
   }
+
+  .js-headerMenuOpen > .header__menu-corner::after {
+    display: none;
+  }
+
+  .js-headerMenuOpen > .header__menu-corner::before {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 360px) {
   .about__title {
     font-size: 14px;
     line-height: 1.22;
+    background-size: cover;
   }
 
   .advantages__item {
@@ -3056,14 +3066,26 @@ main {
 }
 
 @media screen and (max-width: 359px) {
+  .header__search {
+    margin-right: 2px;
+  }
+
+  .header__search-input {
+    width: 190px;
+  }
+
+  .header__menu {
+    margin-left: 15px;
+  }
+
   .politician-header__stat-line {
     width: 200px;
   }
 }
 
-.webp .main-about { background: url(../../img/index/head.webp) center no-repeat; }
+.webp .main-about { background: url(../img/index/head.webp) center; }
 
 @media screen and (max-width: 575px) {
 
-  .webp .about__title { background: url(../../img/index/head-mob.webp) center no-repeat; }
+  .webp .about__title { background: url(../img/index/head-mob.webp) center/cover; }
 }
