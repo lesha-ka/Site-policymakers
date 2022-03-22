@@ -23,6 +23,7 @@ export const getStars = () => {
                 let resultBlock = document.querySelector(`[data-result="${QuestionNumber}"]`)
                 resultBlock.setAttribute('data-count', starsValue);
                 starsResult();
+                console.log(starsValue);
             }
         });
     }

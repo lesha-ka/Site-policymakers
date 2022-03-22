@@ -24,10 +24,15 @@
             & img {
                 @media #{$tablet} {
                     border-radius: 14px;
-                    max-width: 47.5%;
                 }
                 @media #{$phone} {
-                    max-height: 150px;
+                    height: 150px;
+                    align-self: center;
+                }
+            }
+            & picture {
+                @media #{$phone} {
+                    height: 150px;
                     align-self: center;
                 }
             }
@@ -70,6 +75,7 @@
             @media #{$phone} {
                 margin-left: 18px;
                 padding-right: 0;
+                flex-basis: 45%;
             }
         }
         &__main {
