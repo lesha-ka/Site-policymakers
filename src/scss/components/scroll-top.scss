@@ -20,11 +20,11 @@
         display: none!important;
     }
     &:hover {
-        color: $blue;
+        color: $sky;
         transition: 0.3s ease-out;
         .scroll-top__icon-wrap {
             transition: 0.3s ease-out;
-            background-color: $blue;
+            background-color: $sky;
         }
         .scroll-top__icon path {
             transition: 0.3s ease-out;
@@ -38,7 +38,7 @@
         padding: 7.17px;
         text-align: center;
         border-radius: 50%;
-        border: 1px solid $blue;
+        border: 1px solid $sky;
         background-color: $white;
         margin-right: 8px;
     }

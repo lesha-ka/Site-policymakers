@@ -7,7 +7,7 @@
     }
     &__form {
         text-align: center;
-        border: 1px solid $blue;
+        border: 1px solid $sky;
         border-radius: 10px;
         padding: 34.5px 20px;
     }
@@ -21,7 +21,7 @@
         margin-bottom: 32px;
     }
     &__input {
-        border: 1px solid $blue;
+        border: 1px solid $sky;
         color: $black;
         border-radius: 5px;
         padding: 10px;
@@ -36,16 +36,17 @@
     }
     &__btn {
         border-radius: 5px;
-        border: 1px solid $blue;
+        border: 1px solid $sky;
         background: $white;
         transition: 0.3s ease-out;
         padding: 10px;
-        color: $blue;
+        color: $black;
         cursor: pointer;
         @include fz-18;
         &:hover {
-            color: $white;
-            background: $blue;
+            color: $black;
+            border: 1px solid $l-sky;
+            background: $l-sky;
         }
     }
 }

@@ -37,6 +37,12 @@
                 }
             }
         }
+        &__photo{
+            max-width: 296px;
+            @media #{$tablet} {
+                max-width: 152px;
+            }
+        }
         &__table {
             padding: 19px 26px 24px;
             border-radius: 10px;
@@ -153,7 +159,7 @@
                 border-radius: 24px;
             }
             &::-webkit-progress-value {
-                background-color: $green;
+                background-color: $sky;
                 border-radius: 24px;
             }
         }
@@ -240,18 +246,19 @@
         &__link {
             @include fz-18;
             align-self: flex-start;
-            color: $blue;
+            color: $sky;
             padding: 8px 30px;
             margin-left: auto;
-            border: 1px solid $blue;
+            border: 1px solid $sky;
             border-radius: 6px;
             transition: 0.3s ease-out;
             @media #{$tablet} {
                 display: none;
             }
             &:hover {
-                color: $white;
-                background: $blue;
+                color: $black;
+                border: 1px solid $l-sky;
+                background: $l-sky;
             }
         }
     }
@@ -298,6 +305,57 @@
     &-comments {
         @media #{$phone} {
             padding-top: 28px;
+        }
+        &__checked {
+            margin-bottom: 60px;
+            @media #{$phone} {
+                margin-bottom: 32px;
+            }
+        }
+        &__checked-title {
+            @include fz-18;
+            font-weight: 500;
+            display: flex;
+            max-width: 545px;
+            @media #{$phone} {
+                @include fz-14;
+            }
+        }
+        &__checked-input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            & + label {
+                display: inline-flex;
+                align-items: center;
+                user-select: none;
+                margin-left: 28px;
+                margin-top: -3px;
+            }
+            & + label::before {
+                content: '';
+                display: inline-block;
+                width: 25.5px;
+                height: 25.5px;
+                border: 1px solid $sky;
+                border-radius: 5px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 50% 50%;
+            }
+            &:checked+label::before {
+                border-color: $sky;
+                background-image: url("../img/icons/check.svg");
+                background-size: cover;
+            }
+        }
+        &__checked-text {
+            margin-top: 16px;
+            @include fz-14;
+            max-width: 545px;
+            @media #{$phone} {
+                @include fz-12;
+            }
         }
         &__item {
             max-width: 908px;

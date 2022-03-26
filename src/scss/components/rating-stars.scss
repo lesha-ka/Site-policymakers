@@ -55,6 +55,30 @@
         background-size: cover;
     }
 }
+.rating-result--reviews {
+    @media #{$tablet} {
+        text-align: left;
+        margin-top: 8px;
+    }
+    & span {
+        display: inline-block;
+        position: relative;
+        padding: 0;
+        margin-right: 7px;
+        width: 16px;
+        height: 16px;
+        background: url('../img/icons/star-sky.svg') center no-repeat;
+        background-size: cover;
+    }
+    & > span.active {
+        background: url('../img/icons/star-full-sky.svg') center no-repeat;
+        background-size: cover;
+    }
+    & > span.semi-active {
+        background: url('../img/icons/star-semi.svg') center no-repeat;
+        background-size: cover;
+    }
+}
 .rating-input {
 	overflow: hidden;
 	max-width: 584px;

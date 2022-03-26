@@ -1,3 +1,6 @@
+.error {
+    border-color: #ff0000;
+}
 .js-show {
     opacity: 1;
     transform: translateY(0);
@@ -20,7 +23,7 @@
         top: -8px;
         right: -34;
         background-color: $d-white;
-        border: 1px solid $m-blue;
+        border: 1px solid $sky;
         border-bottom: 1px solid $d-white;
         border-radius: 10px 10px 0 0px;
         width: calc(100% + 56px);
@@ -35,7 +38,7 @@
         &::after {
             content: '';
             position: absolute;
-            box-shadow: 1px 0 0 0 $m-blue;
+            box-shadow: 1px 0 0 0 $sky;
             height: 10px;
             width: 20px;
             bottom: -40px;

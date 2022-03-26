@@ -117,7 +117,33 @@ main.survey
                         .survey__form-btns
                             .survey__form-btn.js-surveyPrev Назад
                             .survey__form-btn.js-surveyNext Далее
-                .survey__form.survey__form--final.js-surveyQuestion(data-survey="5")
+                    .survey__form-input.js-surveyQuestion(data-survey="5")
+                        h4.survey__form-question Общая оценка
+                        .rating-input.js-ratingInput
+                            input#star-50(type='radio' name='rating-5' value='10')
+                            label(for='star-50' title='Оценка «10»')
+                            input#star-49(type='radio' name='rating-5' value='9')
+                            label(for='star-49' title='Оценка «9»')
+                            input#star-48(type='radio' name='rating-5' value='8')
+                            label(for='star-48' title='Оценка «8»')
+                            input#star-47(type='radio' name='rating-5' value='7')
+                            label(for='star-47' title='Оценка «7»')
+                            input#star-46(type='radio' name='rating-5' value='6')
+                            label(for='star-46' title='Оценка «6»')
+                            input#star-45(type='radio' name='rating-5' value='5')
+                            label(for='star-45' title='Оценка «5»')
+                            input#star-44(type='radio' name='rating-5' value='4')
+                            label(for='star-44' title='Оценка «4»')
+                            input#star-43(type='radio' name='rating-5' value='3')
+                            label(for='star-43' title='Оценка «3»')
+                            input#star-42(type='radio' name='rating-5' value='2')
+                            label(for='star-42' title='Оценка «2»')
+                            input#star-41(type='radio' name='rating-5' value='1')
+                            label(for='star-41' title='Оценка «1»')
+                        .survey__form-btns
+                            .survey__form-btn.js-surveyPrev Назад
+                            .survey__form-btn.js-surveyNext Далее
+                .survey__form.survey__form--final.js-surveyQuestion(data-survey="6")
                     .survey__form-head
                         .survey__result-list.js-surveyResult
                             h4.survey__result-title Текст Текст
@@ -167,6 +193,20 @@ main.survey
                                 .survey__result-item.js-starsWrap
                                     .survey__form-rate.js-starsCount(data-result="4")
                                         .survey__form-value Открытость
+                                        .rating-result.rating-result--survey
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                            span
+                                .survey__result-item.js-starsWrap
+                                    .survey__form-rate.js-starsCount(data-result="5")
+                                        .survey__form-value Общая оценка
                                         .rating-result.rating-result--survey
                                             span
                                             span

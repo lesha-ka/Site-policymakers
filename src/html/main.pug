@@ -3,9 +3,11 @@ main.main
         h1.about__title Оцени работу общественных и политических деятелей твоего города
         .container
             form.about__search(action="#")
-                input.about__input(type="text" placeholder="Поиск по адресу проживания")
+                input.about__input(type="text" placeholder="ФИО, Должность, Адрес")
                 button.about__search-btn Поиск
-            ul.about__advantages
+    .container
+        section.main__advantages
+            ul.advantages
                 li.advantages__item
                     .advantages__img
                         img(src="@img/index/evaluation.png", alt="Оценка")
@@ -21,8 +23,8 @@ main.main
                         img(src="@img/index/shild.png", alt="Защита")
                     h3.advantages__title Независимый ресурс
                     p.advantages__text Текст текст текст текст текст текст текст текст текст тексттекст текст текст текст текст текст текст текст текст тексттекст текст текст текст
-    .container
         section.main-comment
+            hr.main__line
             h3.comment__title Комментируют сейчас
             .comment__wrap
                 ul.comment__list

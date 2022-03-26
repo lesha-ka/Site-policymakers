@@ -11,7 +11,7 @@
     &__item {
         display: flex;
         padding: 11.33px 13px 16px;
-        border: 1px solid $blue;
+        border: 1px solid $sky;
         border-radius: 10px;
         margin-bottom: 24px;
         @media #{$tablet} {
@@ -41,6 +41,7 @@
         @include fz-18;
         color: $black;
         @media #{$phone} {
+            display: none;
             @include fz-14;
             margin-left: 11px;
         }
@@ -49,7 +50,7 @@
         position: absolute;
         top: 7px;
         right: 32px;
-        color: $blue;
+        color: $sky;
         margin-right: 34px;
         @include fz-14;
         @media #{$tablet} {
@@ -67,6 +68,9 @@
             right: -34px;
             background: url(../img/icons/del.svg) center;
         }
+    }
+    &__stars {
+        margin-bottom: 12px;
     }
     &__descriprion {
         display: flex;
@@ -96,10 +100,10 @@
     }
     &__target {
         display: flex;
-        border-left: 1px solid $blue;
+        border-left: 1px solid $sky;
         padding-left: 36px;
         @media #{$tablet} {
-            border-top: 1px solid $blue;
+            border-top: 1px solid $sky;
             border-left: none;
             padding-top: 18px;
             padding-left: 0;
@@ -107,7 +111,7 @@
             align-items: center;
         }
         @media #{$phone} {
-            padding: 18px 10% 0;
+            padding: 18px 5% 0;
         }
     }
     &__img {
@@ -124,7 +128,7 @@
             max-width: 70px;
         }
     }
-    &__name {
+    &__info {
         min-width: 130px;
         margin: auto;
         text-align: center;
@@ -135,5 +139,10 @@
             align-items: center;
             margin: 0;
         }
+    }
+    &__label {
+        margin-top: 8px;
+        @include fz-12;
+        text-align: center;
     }
 }

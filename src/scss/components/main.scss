@@ -1,5 +1,13 @@
 .main {
+    background: url(../img/index/main-bg.png);
+    background-position: center 0;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-bottom: 100px;
+    @media #{$laptop} {
+        background-position: center;
+        padding-bottom: 40px;
+    }
     @media #{$tablet} {
         padding-bottom: 40px;
     }
@@ -9,16 +17,15 @@
     &-about {
         background: url(../img/index/head.png) center;
         background-size: cover;
-        padding: 80px 0 73px ;
+        padding: 66px 0 63px ;
         @media #{$tablet} {
-            background: none;
-            background-size: 100%;
-            padding: 20px 0;
+            padding: 45px 0;
         }
         @media #{$phone} {
-            background: none;
-            background-size: 100%;
-            padding: 0;
+            padding: 50px 0 46px;
+            background-image: url(../img/index/head-mob.png);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
     }
     &-comment {
@@ -27,7 +34,7 @@
             padding: 40px 0;
         }
         @media #{$phone} {
-            padding: 37px 0 2px;
+            padding: 0px 0 2px;
         }
     }
     &-article {
@@ -40,6 +47,7 @@
         }
     }
     &__line {
+        border-left: 0px;
         border-top: 1px solid $l-gray;
         margin-block-start: 0;
         margin-block-end: 0;
@@ -47,23 +55,46 @@
 }
 .about {
     &__title {
-        max-width: 60%;
+        position: relative;
+        max-width: 55%;
         margin: 0 auto 50px;
         @include fz-36;
-        font-weight: 400;
+        font-weight: 700;
         text-align: center;
+        padding: 10px;
+        color: #2e2e2e;
+        border-radius: 15px;
+        z-index: 0;
+        &::after {
+            position: absolute;
+            z-index: -1;
+            content: "";
+            background: rgba(220, 234, 233, 0.79);
+            border-radius: 15px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            @media #{$phone} {
+                background: none;
+            }
+        }
+        @media #{$desktop} {
+            max-width: 75%;
+        }
         @media #{$tablet} {
             max-width: 80%;
             @include fz-24;
         }
         @media #{$phone} {
+            background-color: $white;
+            border-radius: 6px;
             @include fz-18;
-            margin: 0;
-            padding: 75px 20px 178px;
-            min-height: 307px;
-            max-width: 100%;
-            background: url(../img/index/head-mob.jpg) center/cover;
-            background-size: 100% auto;
+            margin: 0 auto;
+            padding: 5px;
+            max-width: 90%;
         }
         @media #{$small-phone} {
             @include fz-14;
@@ -78,14 +109,17 @@
             max-width: 80%;
         }
         @media #{$phone} {
-            display: none;
+            max-width: 100%;
+            display: block;
+            margin-top: 80px;
+            text-align: center;
         }
     }
     &__input {
         @include fz-14;
         box-sizing: border-box;
         width: calc(100% - 108px);
-        background-color: transparent;
+        background-color: $white;
         color: $black;
         border: 1px solid $l-black;
         border-right: none;
@@ -93,51 +127,86 @@
         padding: 14px;
         &::placeholder {
             text-align: center;
+            @media #{$phone} {
+                color: $black;
+            }
         }
         &:focus-visible {
             border: 1px solid $l-black;
             border-right: none;
             border-radius: 10px 0 0 10px;
             outline: none;
+            @media #{$phone} {
+                border: none;
+                border-radius: 10px 10px 0px 0px;
+            }
+        }
+        @media #{$phone} {
+            max-width: 100%;
+            width: 93%;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            border-radius: 10px 10px 0px 0px;
+            border: none;
         }
     }
     &__search-btn {
+        box-sizing: border-box;
         @include fz-14;
         height: 100%;
-        background-color: $blue;
-        color: $white;
+        background-color: $sky;
+        color: $black;
         border-radius: 0px 10px 10px 0px;
-        border: 1px solid $blue;
+        border: 1px solid $sky;
         outline: none;
         margin: 0;
-        padding: 14.5px 30px;
+        padding: 14px 30px;
         cursor: pointer;
         transition: 0.3s ease-out;
-        &:hover {
-            background-color: $l-blue;
-        }
-    }
-    &__advantages {
-        max-width: 95%;
-        margin: 90px auto 0;
-        display: flex;
-        justify-content: space-between;
-        @media #{$tablet} {
-            margin: 7px auto 0;
-            padding-top: 18px;
-            display: block;
-            max-width: 100%;
-        }
         @media #{$phone} {
-            border-top: 1px solid rgba(181, 181, 181, 0.65);
+            max-width: 100%;
+            width: 93%;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            border-radius: 0px 0px 10px 10px;
+            border: none;
+            background: $sky;
+        }
+        &:hover {
+            border: 1px solid $l-sky;
+            background-color: $l-sky;
+            @media #{$phone} {
+                border-radius: 0px 0px 10px 10px;
+                border: none;
+                background-color: $l-sky;
+            }
         }
     }
 }
 .advantages {
+    max-width: 95%;
+    margin: 50px auto 63px;
+    display: flex;
+    justify-content: space-between;
+    @media #{$tablet} {
+        margin: 0 auto 20px;
+        padding-top: 18px;
+        display: block;
+        max-width: 100%;
+    }
+    @media #{$phone} {
+        margin-top: 20px;
+        border-top: 1px solid $l-gray;
+    }
     &__item {
         position: relative;
         flex: 0 0 29.5%;
         text-align: center;
+        &:last-child::after {
+            display: none;
+        }
         &::after {
             @media #{$tablet} {
                 content: "";
@@ -146,7 +215,7 @@
                 bottom: 0;
                 width: 87.5%;
                 height: 1px;
-                background-color: rgba(181, 181, 181, 0.65);
+                background-color:  $l-gray;
             }
         }
         @media #{$tablet} {
@@ -187,9 +256,11 @@
     &__title {
         @include fz-24;
         font-weight: 400;
+        margin-top: 44px;
         margin-bottom: 54px;
         @media #{$phone} {
             @include fz-18;
+            margin-top: 32px;
             margin-bottom: 24px;
         }
         @media #{$small-phone} {
@@ -330,9 +401,10 @@
         max-width: 231px;
         align-self: center;
         padding: 10px 30px;
-        border: 1px solid $blue;
+        border: 1px solid $sky;
+        background-color: $sky;
         border-radius: 6px;
-        color: $blue;
+        color: $black;
         transition: 0.3s ease-out;
         @include fz-18;
         @media #{$phone} {
@@ -340,8 +412,8 @@
             padding: 7px 28px;
         }
         &:hover {
-            background-color: $blue;
-            color: $white;
+            border: 1px solid $l-sky;
+            background-color: $l-sky;
         }
     }
 }

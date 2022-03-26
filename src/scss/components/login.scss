@@ -29,7 +29,7 @@
         color: $black;
         padding: 11px 35px 11px 16px;
         border-radius: 5px;
-        border: 1px solid $blue;
+        border: 1px solid $sky;
         transition: 0.3s ease-out;
         width: 234px;
         &::placeholder {
@@ -47,7 +47,7 @@
         margin-bottom: 28px;
         transition: 0.3s ease-out;
         &:hover {
-            color: $blue;
+            color: $sky;
         }
     }
     &__enter {
@@ -58,16 +58,18 @@
     }
     &__btn {
         border-radius: 5px;
-        border: 1px solid $blue;
+        border: 1px solid $sky;
         background: $white;
         transition: 0.3s ease-out;
         padding: 10px;
-        color: $blue;
+        color: $black;
         cursor: pointer;
         @include fz-18;
         &:hover {
-            color: $white;
-            background: $blue;
+            color: $black;
+            border-radius: 5px;
+            background-color: $l-sky;
+            border: 1px solid $l-sky;
         }
     }
 }

@@ -3,7 +3,8 @@ main.politician
         section.politician-header 
             .politician-header__wrap
                 .politician-header__img
-                    img(src="@img/politician/politician.jpg", alt="Фото")
+                    .politician-header__photo 
+                        img(src="@img/politician/politician.jpg", alt="Фото")
                     .politician-header__title.politician-header__title--mobile
                         .politician-header__main
                             h3.politician-header__info-name Локоть Анатолий Евгеньевич
@@ -87,8 +88,14 @@ main.politician
                         .politician-rating__value.politician-rating__value--info.rate.js-starsCount(data-color="green" data-count="8") 8.2
                         .politician-rating__quantity.politician-rating__quantity--info
                             span 156
-                            | &nbsp;оценок       
+                            | &nbsp;оценок    
         section.politician-comments 
+            .politician-comments__checked
+                .politician-comments__checked-title 
+                    p Показывать только проверенные отзывы
+                    input(type="checkbox" id="check1").politician-comments__checked-input 
+                    label(for="check1")
+                .politician-comments__checked-text Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
             .politician-comments__item 
                 .politician-comments__item-head
                     .politician-comments__img

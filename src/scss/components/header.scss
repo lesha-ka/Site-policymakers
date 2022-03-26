@@ -1,7 +1,8 @@
 .header {
     background-color: $d-white;
-    box-shadow: 0px 4px 4px rgba(76, 143, 221, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
     position: relative;
+    z-index: 1;
     &__wrap {
         width: calc(100% + 76px);
         margin-left: -103px;
@@ -109,7 +110,9 @@
         right: 2px;
         top: 10px;
         height: 18px;
-        background: url(../img/icons/filter.svg) center;
+        background-image: url(../img/icons/filter.svg);
+        background-position: center;
+        background-repeat: no-repeat;
         cursor: pointer;
     }
     &__link {
@@ -207,7 +210,7 @@
         z-index: 1;
         right: -100%;
         box-sizing: border-box;
-        border: 1px solid $m-blue;
+        border: 1px solid $sky;
         border-radius: 10px 0 10px 10px;
         background: $d-white;
         padding: 33.33px 26px 0px;

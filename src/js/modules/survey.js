@@ -8,12 +8,12 @@ export const getSurvey = () => {
                 let surveyQuestion = e.target.closest('.js-surveyQuestion');
                 let QuestionNumber = surveyQuestion.getAttribute('data-survey');
                 QuestionNumber++;
-                if (QuestionNumber <= 5 & QuestionNumber > 1) {
+                if (QuestionNumber <= 6 & QuestionNumber > 1) {
                     let nextQuestionBlock = document.querySelector(`[data-survey="${QuestionNumber}"]`)
                     surveyQuestion.classList.add('js-hide');
                     nextQuestionBlock.classList.add('js-block');
                 }
-                if (QuestionNumber == 5) {
+                if (QuestionNumber == 6) {
                     formStart.classList.add('js-hide');
                 }
             })
@@ -27,7 +27,7 @@ export const getSurvey = () => {
                 let prevQuestionBlock = document.querySelector(`[data-survey="${QuestionNumber}"]`)
                 surveyQuestion.classList.toggle('js-block');
                 prevQuestionBlock.classList.toggle('js-hide');
-                if (QuestionNumber == 4) {
+                if (QuestionNumber == 5) {
                     formStart.classList.toggle('js-hide');
                     prevQuestionBlock.classList.remove('js-hide');
                 }
