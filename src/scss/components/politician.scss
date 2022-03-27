@@ -278,15 +278,69 @@
                 @include fz-14;
             }
         }
-        &__text {
+        &__textbox {
             margin-top: 8px;
             margin-bottom: 60px;
+            @media #{$phone} {
+                margin-top: 15px;
+                margin-bottom: 46px;
+            }
+        }
+        &__text {
+            overflow-x: hidden;
+            max-height: 66px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;  
             @include fz-18;
             color: $black;
             @media #{$phone} {
+                max-height: 100px;
+                -webkit-line-clamp: 6;
                 @include fz-14;
-                margin-bottom: 46px;
-                margin-top: 15px;
+            }
+        }
+        &__text--open {
+            max-height: initial;
+            overflow-y: visible;
+            overflow-x: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: initial;
+            -webkit-box-orient: vertical; 
+            @media #{$phone} {
+                max-height: initial;
+                -webkit-line-clamp: initial;
+            } 
+        }
+        &__btn {
+            box-sizing: border-box;
+            @include fz-14;
+            background-color: $sky;
+            color: $black;
+            border-radius: 10px;
+            border: 1px solid $sky;
+            outline: none;
+            margin: 15px auto 0;
+            padding: 14px 30px;
+            cursor: pointer;
+            transition: 0.3s ease-out;
+            display: none;
+            @media #{$phone} {
+                max-width: 280px;
+                margin: 15px auto 0;
+                text-align: center;
+                border: 1px solid $sky;
+                background: $sky;
+            }
+            &:hover {
+                border: 1px solid $l-sky;
+                background-color: $l-sky;
+                @media #{$phone} {
+                    border: 1px solid $l-sky;
+                    background-color: $l-sky;
+                }
             }
         }
         &__stars-wrap {

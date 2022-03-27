@@ -116,25 +116,35 @@
     }
     &__img {
         min-width: 94px;
+        max-width: 94px;
+        width: 94px;
         margin-right: 8px;
         margin-top: auto;
         margin-bottom: auto;
         border-radius: 10px;
         @media #{$tablet} {
-            min-width: auto;
+            min-width: 120px;
             max-width: 120px;
+            width: 120px;
         }
         @media #{$phone} {
+            min-width: 70px;
             max-width: 70px;
+            width: 70px;
         }
     }
     &__info {
         min-width: 130px;
+        max-width: 130px;
+        width: 130px;
         margin: auto;
         text-align: center;
         @include fz-14;
         color: $black;
         @media #{$tablet} {
+            min-width: auto;
+            max-width: 100%;
+            width: auto;
             display: flex;
             align-items: center;
             margin: 0;

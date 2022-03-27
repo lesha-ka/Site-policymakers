@@ -51,10 +51,11 @@
         }
     }
     &__input {
+        max-width: 274px;
         display: block;
         @include fz-18;
         color: $black;
-        padding: 11px 35px 11px 16px;
+        padding: 11px 55px 11px 16px;
         border-radius: 5px;
         border: 1px solid $sky;
         transition: 0.3s ease-out;

@@ -5,6 +5,7 @@ import { getScrollTop } from './modules/scroll-top.js';
 import { getInputEdit} from './modules/input-edit.js';
 import { getSurvey} from './modules/survey.js';
 import { getStars} from './modules/stars.js';
+import { getMoreText} from './modules/more-text.js';
 
 pictures.isWebp();
 
@@ -19,4 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	getInputEdit();
 	getSurvey();
 	getStars();
+	getMoreText();
 });
