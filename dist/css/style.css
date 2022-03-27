@@ -257,7 +257,6 @@ main {
 }
 
 .container {
-  overflow-x: hidden;
   max-width: 1214px;
   margin: 0 auto;
 }
