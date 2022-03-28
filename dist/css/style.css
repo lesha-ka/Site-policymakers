@@ -1364,6 +1364,10 @@ main {
   margin-right: 13px;
 }
 
+.politician-comments__stars {
+  margin-left: 25px;
+}
+
 .politician-comments__name {
   font-size: 14px;
   line-height: 1.22;
@@ -1697,6 +1701,21 @@ main {
 }
 
 .rating-result--reviews > span.semi-active {
+  background: url("../img/icons/star-semi.svg") center no-repeat;
+  background-size: cover;
+}
+
+.rating-result--checked span {
+  background: url("../img/icons/star.svg") center no-repeat;
+  background-size: cover;
+}
+
+.rating-result--checked > span.active {
+  background: url("../img/icons/star-full.svg") center no-repeat;
+  background-size: cover;
+}
+
+.rating-result--checked > span.semi-active {
   background: url("../img/icons/star-semi.svg") center no-repeat;
   background-size: cover;
 }
@@ -2646,6 +2665,16 @@ main {
     display: block;
   }
 
+  .politician-comments__item-head {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .politician-comments__stars {
+    width: 100%;
+    margin-left: 0;
+  }
+
   .politicians__title {
     font-size: 18px;
     line-height: 1.22;
@@ -2716,6 +2745,11 @@ main {
   .rating-result--reviews {
     text-align: left;
     margin-top: 8px;
+  }
+
+  .rating-result--reviews span {
+    width: 16px;
+    height: 16px;
   }
 
   .rating-input {
@@ -3216,7 +3250,6 @@ main {
   .politician-comments__text {
     font-size: 12px;
     line-height: 1.22;
-    margin-top: 25px;
     margin-right: 25px;
   }
 

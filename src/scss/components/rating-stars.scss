@@ -69,6 +69,10 @@
         height: 16px;
         background: url('../img/icons/star-sky.svg') center no-repeat;
         background-size: cover;
+        @media #{$tablet} {
+            width: 16px;
+            height: 16px;
+        }
     }
     & > span.active {
         background: url('../img/icons/star-full-sky.svg') center no-repeat;
@@ -78,6 +82,20 @@
         background: url('../img/icons/star-semi.svg') center no-repeat;
         background-size: cover;
     }
+}
+.rating-result--checked {
+    & span {
+        background: url('../img/icons/star.svg') center no-repeat;
+        background-size: cover;
+    }
+    & > span.active {
+        background: url('../img/icons/star-full.svg') center no-repeat;
+        background-size: cover;
+    }
+    & > span.semi-active {
+        background: url('../img/icons/star-semi.svg') center no-repeat;
+        background-size: cover;
+    } 
 }
 .rating-input {
 	overflow: hidden;
