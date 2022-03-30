@@ -142,6 +142,109 @@
   font-style: italic;
 }
 
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+}
+
+[dir=rtl] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 *,
 *::before,
 *::after {
@@ -271,6 +374,44 @@ main {
 
 .rate[data-color=yellow] {
   background: #FFF06B;
+}
+
+.index-slider .slick-list {
+  overflow-y: visible;
+  overflow-x: clip;
+}
+
+.index-slider .slick-slide {
+  margin-right: 28px;
+}
+
+.index__dots {
+  margin-top: 28px;
+  text-align: center;
+}
+
+.index__dots li {
+  cursor: pointer;
+  margin-right: 22px;
+  display: inline-block;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background: #5CFAF0;
+  border-radius: 50%;
+}
+
+.index__dots li button {
+  opacity: 0;
+  position: absolute;
+}
+
+.index__dots li:last-child {
+  margin-right: 0;
+}
+
+.index__dots .slick-active {
+  background: #54e1d9;
 }
 
 .scroll-top {
@@ -819,20 +960,8 @@ main {
   padding: 0 30px;
 }
 
-.comment__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .comment__item {
   position: relative;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 16.8%;
-          flex: 0 0 16.8%;
 }
 
 .comment__img {
@@ -1397,11 +1526,12 @@ main {
 }
 
 .politicians__list {
+  max-width: 814px;
+  margin: 0 auto;
   padding: 44px 0 0 15%;
 }
 
 .politicians__item {
-  max-width: 814px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2488,26 +2618,7 @@ main {
   }
 
   .comment__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     padding: 0 7px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-
-  .comment__item:nth-child(4n) {
-    margin-right: 0%;
-  }
-
-  .comment__item {
-    margin-bottom: 24px;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 21%;
-            flex: 0 0 21%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-right: 5%;
   }
 
   .comment__name {
@@ -2589,6 +2700,10 @@ main {
     color: #545454;
   }
 
+  .politician-header {
+    padding: 0 0 24px;
+  }
+
   .politician-header__wrap {
     display: block;
   }
@@ -2654,7 +2769,9 @@ main {
   }
 
   .politician-header__link {
-    display: none;
+    font-size: 14px;
+    line-height: 1.22;
+    margin: 20px auto 0;
   }
 
   .politician-info__title {
@@ -2680,7 +2797,7 @@ main {
     line-height: 1.22;
   }
 
-  .politicians__item {
+  .politicians__list {
     max-width: 700px;
   }
 
@@ -2828,6 +2945,14 @@ main {
 
   .container {
     max-width: calc(100% - 40px);
+  }
+
+  .index-slider .slick-slide {
+    margin-right: 14px;
+  }
+
+  .index__dots {
+    margin: 18px 12px 18px 0;
   }
 
   .header__logo img {
@@ -3019,19 +3144,6 @@ main {
     line-height: 1.22;
     margin-top: 32px;
     margin-bottom: 24px;
-  }
-
-  .comment__list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-
-  .comment__item {
-    margin-right: 0;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 43%;
-            flex: 0 0 43%;
   }
 
   .comment__img {

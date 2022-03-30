@@ -14,13 +14,17 @@
         }
     }
     &__list {
+        max-width: 814px;
+        margin: 0 auto;
         padding: 44px 0 0 15%;
         @media #{$desktop} {
             padding: 20px 0 0;
         }
+        @media #{$tablet} {
+            max-width: 700px;
+        }
     }
     &__item {
-        max-width: 814px;
         display: flex;
         align-items: center;
         padding: 10px;
@@ -30,9 +34,6 @@
         cursor: pointer;
         @media #{$desktop} {
             margin: 0 auto 32px;
-        }
-        @media #{$tablet} {
-            max-width: 700px;
         }
     }
     &__photo {

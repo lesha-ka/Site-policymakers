@@ -274,35 +274,12 @@
         }
     }
     &__list {
-        display: flex;
-        justify-content: space-between;
         @media #{$tablet} {
-            flex-wrap: wrap;
             padding: 0 7px;
-            justify-content: flex-start;
-        }
-        @media #{$phone} {
-            justify-content: space-between;
         }
     }
     &__item {
         position: relative;
-        flex: 0 0 16.8%;
-        &:nth-child(4n) {
-            @media #{$tablet} {
-                margin-right: 0%;
-            }
-        }
-        @media #{$tablet} {
-            margin-bottom: 24px;
-            flex: 0 0 21%;
-            flex-wrap: wrap;
-            margin-right: 5%;
-        }
-        @media #{$phone} {
-            margin-right: 0;
-            flex: 0 0 43%;
-        }
     }
     &__img {
         margin-bottom: 12px;
