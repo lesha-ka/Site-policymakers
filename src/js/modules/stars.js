@@ -3,6 +3,9 @@ export const getStars = () => {
         let starsBlock = document.querySelectorAll('.js-starsWrap');
         starsBlock.forEach(function(elem) {
             let starsResult = elem.querySelectorAll('span');
+            starsResult.forEach(function(elem) {
+                elem.classList.remove('active');
+            });
             let starsCount = elem.querySelector('.js-starsCount').getAttribute('data-count');
             for (let i = 0; i < starsCount; i++) {
                 starsResult[i].classList.add('active');

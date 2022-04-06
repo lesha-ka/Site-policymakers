@@ -14,6 +14,7 @@
         border: 1px solid $sky;
         border-radius: 10px;
         margin-bottom: 24px;
+        justify-content: space-between;
         @media #{$tablet} {
             display: block;
         }
@@ -22,6 +23,7 @@
         }
     }
     &__content {
+        width: 100%;
         position: relative;
         padding-right: 32px;
         @media #{$tablet} {
@@ -76,6 +78,7 @@
         display: flex;
     }
     &__text {
+        width: 100%;
         margin-right: 25px;
         @include fz-14;
         color: $black;

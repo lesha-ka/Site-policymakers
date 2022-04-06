@@ -1532,6 +1532,7 @@ main {
 }
 
 .politicians__item {
+  min-height: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1546,9 +1547,14 @@ main {
 }
 
 .politicians__photo {
-  max-width: 120px;
+  width: 120px;
+  text-align: center;
   margin-right: 32px;
   border-radius: 14px;
+}
+
+.politicians__photo img {
+  margin: auto;
 }
 
 .politicians__name {
@@ -2038,6 +2044,9 @@ main {
   border: 1px solid #54e1d9;
   border-radius: 10px;
   margin-bottom: 24px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .reviews__item:last-child {
@@ -2045,6 +2054,7 @@ main {
 }
 
 .reviews__content {
+  width: 100%;
   position: relative;
   padding-right: 32px;
 }
@@ -2101,6 +2111,7 @@ main {
 }
 
 .reviews__text {
+  width: 100%;
   margin-right: 25px;
   font-size: 14px;
   line-height: 1.22;
@@ -2153,6 +2164,12 @@ main {
   text-align: center;
 }
 
+.input__error {
+  font-size: 14px;
+  line-height: 1.22;
+  color: #ff0000;
+}
+
 .login__title {
   font-size: 36px;
   line-height: 1.22;
@@ -2162,6 +2179,7 @@ main {
 }
 
 .login__input-wrap {
+  max-width: 234px;
   margin-bottom: 32px;
 }
 

@@ -25,6 +25,7 @@
         }
     }
     &__item {
+        min-height: 140px;
         display: flex;
         align-items: center;
         padding: 10px;
@@ -37,11 +38,15 @@
         }
     }
     &__photo {
-        max-width: 120px;
+        width: 120px;
+        text-align: center;
         margin-right: 32px;
         border-radius: 14px;
         @media #{$phone} {
             margin-right: 20px;
+        }
+        & img {
+            margin: auto
         }
     }
     &__name {
