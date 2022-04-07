@@ -15,10 +15,9 @@
     }
     &__list {
         max-width: 814px;
-        margin: 0 auto;
-        padding: 44px 0 0 15%;
+        margin: 44px auto 0 15%;
         @media #{$desktop} {
-            padding: 20px 0 0;
+            margin: 44px auto 0;
         }
         @media #{$tablet} {
             max-width: 700px;
