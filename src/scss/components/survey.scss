@@ -138,6 +138,7 @@
     &__form-input {
         margin-top: 100px;
         text-align: center;
+        position: relative;
         display: none;
         @media #{$tablet} {
             margin-top: 59px;
@@ -145,6 +146,16 @@
         &--start {
             display: block
         }
+    }
+    &__error {
+        position: absolute;
+        width: 100%;
+        top: -22px;
+        margin: 0 auto;
+        font-size: 16px;
+        color: $red;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
     }
     &__form-question {
         @include fz-24;

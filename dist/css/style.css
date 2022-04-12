@@ -1720,11 +1720,25 @@ main {
 .survey__form-input {
   margin-top: 100px;
   text-align: center;
+  position: relative;
   display: none;
 }
 
 .survey__form-input--start {
   display: block;
+}
+
+.survey__error {
+  position: absolute;
+  width: 100%;
+  top: -22px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #ff0000;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .survey__form-question {

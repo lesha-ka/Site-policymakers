@@ -7,14 +7,21 @@ export const getSurvey = () => {
             elem.addEventListener("click", function(e) {
                 let surveyQuestion = e.target.closest('.js-surveyQuestion');
                 let QuestionNumber = surveyQuestion.getAttribute('data-survey');
+                let starsValue = (surveyQuestion.querySelector('input[type="radio"]:checked').value);
+                let surveyError = (surveyQuestion.querySelector('.js-surveyError'));
                 QuestionNumber++;
-                if (QuestionNumber <= 6 & QuestionNumber > 1) {
-                    let nextQuestionBlock = document.querySelector(`[data-survey="${QuestionNumber}"]`)
-                    surveyQuestion.classList.add('js-hide');
-                    nextQuestionBlock.classList.add('js-block');
-                }
-                if (QuestionNumber == 6) {
-                    formStart.classList.add('js-hide');
+                if (starsValue == 0) {
+                    surveyError.classList.add('js-show')
+                } else {
+                    surveyError.classList.remove('js-show')
+                    if (QuestionNumber <= 6 & QuestionNumber > 1) {
+                        let nextQuestionBlock = document.querySelector(`[data-survey="${QuestionNumber}"]`)
+                        surveyQuestion.classList.add('js-hide');
+                        nextQuestionBlock.classList.add('js-block');
+                    }
+                    if (QuestionNumber == 6) {
+                        formStart.classList.add('js-hide');
+                    }
                 }
             })
         });
