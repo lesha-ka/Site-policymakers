@@ -1720,7 +1720,6 @@ main {
 .survey__form-input {
   margin-top: 100px;
   text-align: center;
-  position: relative;
   display: none;
 }
 
@@ -1762,6 +1761,7 @@ main {
 }
 
 .survey__form-btns {
+  position: relative;
   font-size: 24px;
   line-height: 1.22;
   margin-top: 37px;
@@ -2870,6 +2870,11 @@ main {
 
   .survey__form-input {
     margin-top: 59px;
+  }
+
+  .survey__error {
+    font-size: 14px;
+    top: -29px;
   }
 
   .survey__form-review {
