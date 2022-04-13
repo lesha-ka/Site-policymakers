@@ -391,6 +391,7 @@ main {
 }
 
 .index-slider .slick-slide {
+  overflow-y: visible;
   margin-right: 28px;
 }
 
