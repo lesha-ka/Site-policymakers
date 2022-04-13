@@ -269,6 +269,7 @@
         }
     }
     &__wrap {
+        overflow-y: visible;
         padding: 0 30px;
         @media #{$tablet} {
             padding: 0;
