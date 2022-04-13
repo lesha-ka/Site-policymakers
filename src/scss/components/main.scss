@@ -124,6 +124,7 @@
         border: 1px solid $l-black;
         border-right: none;
         border-radius: 10px 0 0 10px;
+        max-height: 47px;
         padding: 14px;
         &::placeholder {
             text-align: center;
@@ -307,6 +308,7 @@
     }
     &__rate {
         position: absolute;
+        z-index: 15;
         top: -5px;
         right: -15px;
         padding: 8px 10px;

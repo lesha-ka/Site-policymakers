@@ -343,7 +343,8 @@ main {
 }
 
 .wrap-center {
-  height: calc(100vh - 202px);
+  min-height: calc(100vh - 202px);
+  padding: 40px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -848,6 +849,7 @@ main {
   border: 1px solid #545454;
   border-right: none;
   border-radius: 10px 0 0 10px;
+  max-height: 47px;
   padding: 14px;
 }
 
@@ -977,6 +979,7 @@ main {
 
 .comment__rate {
   position: absolute;
+  z-index: 15;
   top: -5px;
   right: -15px;
   padding: 8px 10px;
@@ -2560,7 +2563,8 @@ main {
 
 @media screen and (max-width: 900px) {
   .wrap-center {
-    height: calc(100vh - 186px);
+    padding: 20px 0;
+    min-height: calc(100vh - 186px);
   }
 
   .container {
@@ -2976,7 +2980,7 @@ main {
 
 @media screen and (max-width: 575px) {
   .wrap-center {
-    height: calc(100vh - 170px);
+    min-height: calc(100vh - 170px);
   }
 
   .container {

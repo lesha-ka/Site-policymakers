@@ -85,16 +85,18 @@ main {
 }
 
 .wrap-center {
-    height: calc(100vh - 202px);
+    min-height: calc(100vh - 202px);
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     @media #{$tablet} {
-        height: calc(100vh - 186px);
+        padding: 20px 0;
+        min-height: calc(100vh - 186px);
     }
     @media #{$phone} {
-        height: calc(100vh - 170px);
+        min-height: calc(100vh - 170px);
     }
 }
 
