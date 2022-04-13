@@ -377,6 +377,14 @@ main {
   background: #FFF06B;
 }
 
+.index-slider {
+  overflow-y: visible;
+}
+
+.index-slider .slick-track {
+  overflow-y: visible;
+}
+
 .index-slider .slick-list {
   overflow-y: visible;
   overflow-x: clip;

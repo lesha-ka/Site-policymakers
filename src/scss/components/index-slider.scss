@@ -1,4 +1,8 @@
 .index-slider {
+    overflow-y: visible;
+    & .slick-track {
+        overflow-y: visible;
+    }
     & .slick-list {
         overflow-y: visible;
         overflow-x: clip;
