@@ -105,10 +105,12 @@
         display: flex;
         max-width: 59%;
         margin: 0 auto;
+        max-height: 47px;
         @media #{$tablet} {
             max-width: 80%;
         }
         @media #{$phone} {
+            max-height: initial;
             max-width: 100%;
             display: block;
             margin-top: 80px;
@@ -124,7 +126,6 @@
         border: 1px solid $l-black;
         border-right: none;
         border-radius: 10px 0 0 10px;
-        max-height: 47px;
         padding: 14px;
         &::placeholder {
             text-align: center;

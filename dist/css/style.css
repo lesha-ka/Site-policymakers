@@ -377,12 +377,9 @@ main {
   background: #FFF06B;
 }
 
-.index-slider {
-  overflow-y: visible;
-}
-
 .index-slider .slick-track {
   overflow-y: visible;
+  padding: 10px 0;
 }
 
 .index-slider .slick-list {
@@ -845,6 +842,7 @@ main {
   display: flex;
   max-width: 59%;
   margin: 0 auto;
+  max-height: 47px;
 }
 
 .about__input {
@@ -858,7 +856,6 @@ main {
   border: 1px solid #545454;
   border-right: none;
   border-radius: 10px 0 0 10px;
-  max-height: 47px;
   padding: 14px;
 }
 
@@ -3117,6 +3114,7 @@ main {
   }
 
   .about__search {
+    max-height: initial;
     max-width: 100%;
     display: block;
     margin-top: 80px;
