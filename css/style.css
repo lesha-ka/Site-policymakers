@@ -967,6 +967,7 @@ main {
 }
 
 .comment__wrap {
+  overflow-y: visible;
   padding: 0 30px;
 }
 
