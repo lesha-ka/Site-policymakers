@@ -8,6 +8,7 @@
         overflow-x: clip;
     }
     & .slick-slide {
+        overflow-y: visible;
         margin-right: 28px;
         @media #{$phone} {
             margin-right: 14px;
