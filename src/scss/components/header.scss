@@ -17,13 +17,13 @@
         }
     }
     &__logo {
-        display: flex;
-        flex: 0 0 auto;
-        align-items: center;
+        max-width: 320px;
+        @media #{$phone} {
+            max-width: 200px;
+        }
         & img {
             @media #{$phone} {
-                max-width: 47px;
-                margin-left: 0;
+                max-width: 100%;
             } 
         }
     }
@@ -49,6 +49,10 @@
         font-weight: 400;
         display: flex;
         align-items: center;
+        min-height: 101px;
+        @media #{$phone} {
+            min-height: initial;
+        }
     }
     &__search {
         margin-right: 21px;

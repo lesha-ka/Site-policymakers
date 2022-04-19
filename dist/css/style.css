@@ -503,15 +503,7 @@ main {
 }
 
 .header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  max-width: 320px;
 }
 
 .header__title {
@@ -533,6 +525,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 101px;
 }
 
 .header__search {
@@ -3002,9 +2995,16 @@ main {
     margin: 18px 12px 18px 0;
   }
 
+  .header__logo {
+    max-width: 200px;
+  }
+
   .header__logo img {
-    max-width: 47px;
-    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .header__nav {
+    min-height: initial;
   }
 
   .header__search {
